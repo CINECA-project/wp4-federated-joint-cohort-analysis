@@ -1,5 +1,12 @@
 # CINECA Cloud WP D4.2: Framework and APIs for executing federated genomics analyses
 
+## Table of Contents
+- [Scope](#scope)
+- [Background](#background)
+- [Proposed Framework and APIs](#proposed-framework-and-apis)
+- [Deployment Scenarios](#deployment-scenarios)
+- [PoC Development and User story](#poc-development-and-user-story)
+
 ## Scope
 Main scope of this deliverable is to gather technical requirements & frameworks for federated analysis platform. In work package subtask 4.3.2, the project partners have described mainly two use cases: 
 * Federated QTL analysis for molecular phenotypes, and 
@@ -22,7 +29,7 @@ As a starting point for this deliverable, a Data Workflow Survey for work packag
 #### Figure 1: Data workflow
 ![Survey Data Transfer](img/survey-data-transfer.png)
 
-## Proposed Framework & APIs
+## Proposed Framework and APIs
 Based upon extensive discussion between CINECA WP4 partners on survey results, it was decided APIs of proposed solution should be compatible with [GA4GH](https://www.ga4gh.org/) cloud API standards. GA4GH's Cloud WS proposes 4 API standards that allow one to share tools/workflows (TRS), execute individual jobs on computing platforms using a standard API (TES), run full workflows on execution platforms (WES), and read/write data objects across clouds in an agnostic way (DRS). These API standards are inspired by large-scale, distributed compute projects & in theory could be developed for different computing & data archive enviornments. Figure 2 depicts typical functional architecture of computing ecosystem proposed by GA4GH Cloud WS.
 #### Figure 2: GA4GH Compatible Cloud Platform (Functional Architecture)
 ![ga4gh cloud](img/ga4gh-cloud.png)
@@ -58,7 +65,7 @@ Deployment of APIs in this scenario have following dependecies:
 * **Specific Computing Enviornments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
 * **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
 
-## PoC Development & User story
+## PoC Development and User story
 
 A minimum viable Proof of Concept(PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence PoC is being developed as per **Deployment Model 2**. To ease development efforts, Data staging for workflow would be done via virtual cohort running at CSC's cPouta cloud. Table 2 lists services which are being developed & deployed as per this PoC.
 
