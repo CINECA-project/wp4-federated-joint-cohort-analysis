@@ -28,7 +28,8 @@ Based upon extensive discussion between CINECA WP4 partners on survey results, i
 ![ga4gh cloud](img/ga4gh-cloud.png)
 
 ## Deployment Scenarios
-Following deployment scenarios for GA4GH compatible cloud APIs were discussed:
+
+Following deployment scenarios for Federated Genomics analysis cloud APIs were discussed:
 
 ### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
 Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
@@ -57,8 +58,26 @@ Deployment of APIs in this scenario have following dependecies:
 * **Specific Computing Enviornments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
 * **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
 
+## PoC Development & User story
 
+A minimum viable Proof of Concept(PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence PoC is being developed as per **Deployment Model 2**. To ease development efforts, Data staging for workflow would be done via virtual cohort running at CSC's cPouta cloud. Table 2 lists services which are being developed & deployed as per this PoC.
 
+#### Table 2: PoC Development Details
 
+| Endpoint | Technology  | Deployment Details|
+|:--------|:---|:---|
+| WES | Nextflow Manager | TBD|
+| TES 1 | TESK  | Deployed at CSC's Rahti cloud|
+| TES 2 | TESK  | TBD, EMBL-EBI? |
+| TES X | TESK  | TBD, CINECA-WP4 Partner X? |
+| Virtual Cohort | Federated EGA  | Deployed at CSC's cPouta cloud|
 
+### PoC User Story
+This PoC is being developed to support federated eQTL analysis workflow with following userstory:
+* User submits Nextflow workflow to WES endpoint. 
+* Workflow contains proccesses which runs private analysis on Cohort data available to specific TES endpoint(s)
+* Nextflow manager delegates processes to corresponding TES endpoints.
+* Private analysis is executed on corresponding TES endpoints.
+* Results of analysis from different TES endpoints are then aggregated at specific TES endpoint or WES endpoint.
+* Final aggregated result is made available to end user.
 
