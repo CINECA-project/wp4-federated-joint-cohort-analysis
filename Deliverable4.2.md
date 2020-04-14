@@ -22,3 +22,8 @@ As a starting point for this deliverable, a Data Workflow Survey for work packag
 ### Figure 1: Data workflow
 ![Survey Data Transfer](img/survey-data-transfer.png)
 
+## Proposed Framework & APIs
+Based upon extensive discussion between CINECA WP4 partners on survey results, it was decided proposed solution should use standard cloud APIs coming from GA4GH. GA4GH Cloud WS proposes 4 API standards that allow one to share tools/workflows (TRS), execute individual jobs on clouds using a standard API (TES), run full CWL/WDL workflows on execution platforms (WES), and read/write data objects across clouds in an agnostic way (DRS). These API standards are inspired by large-scale, distributed compute projects & in theory could be developed for different computing & data archive enviornments.
+Figure 2 depicts typical functional architecture of computing ecosystem proposed by GA4GH Cloud WS.
+
+
