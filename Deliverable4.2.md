@@ -27,4 +27,18 @@ Based upon extensive discussion between CINECA WP4 partners on survey results, i
 #### Figure 2: GA4GH Compatible Cloud Platform (Functional Architecture)
 ![ga4gh cloud](img/ga4gh-cloud.png)
 
+## Deployment Scenarios
+Following deployment scenarios for GA4GH compatible cloud APIs were discussed:
+
+### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
+Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployemnt model where a centralized WES & federated TES instances are deployed CINECA WP4 wide partners.
+#### Figure 3: Deployment Scenario 1
+![ga4gh elixir cloud](img/ga4gh-elixir-cloud.png)
+
+However, deployment of APIs in this scenario have following dependecies:
+* **Docker & Kubernetes** WES & TES services from ELIXIR Cloud & AAI project only supports Docker & Kubernetes runtime enviornments.
+* **CWL Workflows** Only CWL workflows are currently supported by Elixir Cloud & AAI pipeline.
+
+
+
 
