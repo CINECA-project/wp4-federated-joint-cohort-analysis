@@ -31,7 +31,7 @@ Based upon extensive discussion between CINECA WP4 partners on survey results, i
 Following deployment scenarios for GA4GH compatible cloud APIs were discussed:
 
 ### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
-Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES instances are deployed CINECA WP4 wide partners.
+Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
 #### Figure 3: Deployment Scenario 1
 ![ga4gh elixir cloud](img/ga4gh-elixir-cloud.png)
 
@@ -40,13 +40,24 @@ Deployment of APIs in this scenario have following dependecies:
 * **CWL Workflows:** Elixir Cloud & AAI APIs currently only support CWL workflow execution.
 
 ### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
-Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) instances are deployed CINECA WP4 wide partners.
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) endpoints are deployed CINECA WP4 wide partners.
 #### Figure 4: Deployment Scenario 2
 ![ga4gh wes nextflow tesk](img/ga4gh-wes-nextflow-tesk.png)
 
 Deployment of APIs in this scenario have following dependecies:
 * **Kubernetes:** TESK currently only supports Kubernetes runtime enviornments.
 * **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+
+### Deployment Scenario 3: Federated Genomic Analysis using Nextflow with multiple executors
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executors in this scenario could be different computing enviornments (for ex. SLURM, SGE, Kubernetes etc.) available at CINECA WP4 partner sites. In this deployment scenario, executor enviornment will not be fully compatible with GA4GH TES specifications. For data access, it is assumed data is made available to data staging area within the cluster. Figure 5, depicts this deployment model where a centralized WES (Nextflow manager) & multiple nextflow executor endpoints are deployed CINECA WP4 wide partners.
+#### Figure 5: Deployment Scenario 5
+![ga4gh wes nextflow multiple executor.png](img/ga4gh-wes-nextflow-multiple-executor.png)
+
+Deployment of APIs in this scenario have following dependecies:
+* **Specific Computing Enviornments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
+* **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+
+
 
 
 
