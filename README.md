@@ -12,7 +12,7 @@ Corresponds to:
 * **Task 4.2** “Execution APIs and environments for Federated Analyses”
 * **D4.2** “Framework and APIs for executing federated genomics analyses”
 
-# Develop some specific federated analysis applications using the framework
+# Develop specific federated analysis applications using the framework
 This umbrella goal corresponds to:
 * **Task 4.3** “Federated Genomic Analyses Algorithm Development”
 * **MS4.2** = *MS15* “Demo workflow running on multiple environments”, due in December 2020
@@ -43,8 +43,9 @@ There are two milestones not linked to any of the tasks above:
 # Table
 **#**|**Task**|**Milestone or deliverable**|**Due**
 -----|-----|-----|-----
-4.1|Privacy/data sharing model|D4.1|December 2019, done
-4.2|Execution APIs and environments for federated analyses|D4.2|December 2020
-4.3|Federated genomic analyses algorithm development|MS4.2 = MS15|December 2020
+4.1|Produce report on data sharing model|D4.1|December 2019, done
+4.2|Develop the technical framework for performing federated analyses|D4.2|December 2020
+4.3|Develop specific federated analysis applications using the framework|MS4.2 = MS15|December 2020
 4.3.1|Federated joint cohort variant genotyping|MS4.3 = MS16|December 2020
 4.3.2|Federated analysis of GWAS and sequencing data|D4.3|December 2022
+4.3.3|Federated genetic analysis of sequencing-based phenotypes|MS4.4 = MS17 / D4.4|December 2021 / December 2022
