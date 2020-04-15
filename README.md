@@ -1,6 +1,6 @@
 # CINECA WP4
 
-The goals of [CINECA project](https://www.cineca-project.eu/) WP4 is to provide a framework for running federated genomics analyses and to implement several example pipelines using that framework. The components developed by the work package are listed below. Links lead to detailed descriptions.
+The goals of [CINECA project](https://www.cineca-project.eu/) work package 4 is to provide a framework for running federated genomics analyses and to implement several example pipelines using that framework. The components developed by the work package are listed below. Links lead to detailed descriptions.
 
 **#**|**Task**|**MS or D**|**Due by end of**
 -----|-----|-----|-----

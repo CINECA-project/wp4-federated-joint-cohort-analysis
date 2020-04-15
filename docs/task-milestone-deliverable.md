@@ -33,6 +33,6 @@ Corresponds to:
 * **MS4.4** = **MS17** “Robust RNA-seq quantification workflow”, due in December 2021
 * **D4.4** “Meta-analysis of splicing and expression QTLs across three cohorts”, due in December 2022
 
-There are also two milestones not linked to any component:
+## Milestones not linked to any component
 * **MS4.1** = **MS14** “Testing feedback to WP1 on data discovery registry”, due in August 2020
 * **MS4.5** = **MS18** “First training materials available”, due in December 2022
