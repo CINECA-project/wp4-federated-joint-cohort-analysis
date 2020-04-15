@@ -41,11 +41,11 @@ There are two milestones not linked to any of the tasks above:
 * **MS4.5** = **MS18** “First training materials available”, due in December 2022
 
 # Table
-**#**|**Task**|**Milestone or deliverable**|**Due**
+**#**|**Task**|**Milestone or deliverable**|**Due by end of**
 -----|-----|-----|-----
-4.1|Produce report on data sharing model|D4.1|December 2019, done
-4.2|Develop the technical framework for performing federated analyses|D4.2|December 2020
-4.3|Develop specific federated analysis applications using the framework|MS4.2 = MS15|December 2020
-4.3.1|Federated joint cohort variant genotyping|MS4.3 = MS16|December 2020
-4.3.2|Federated analysis of GWAS and sequencing data|D4.3|December 2022
-4.3.3|Federated genetic analysis of sequencing-based phenotypes|MS4.4 = MS17 / D4.4|December 2021 / December 2022
+4.1|Produce report on data sharing model|D4.1|2019, done
+4.2|Develop the technical framework for performing federated analyses|D4.2|2020
+4.3|Develop specific federated analysis applications using the framework|MS4.2 = MS15|2020
+4.3.1|Federated joint cohort variant genotyping|MS4.3 = MS16|2020
+4.3.2|Federated analysis of GWAS and sequencing data|D4.3|2022
+4.3.3|Federated genetic analysis of sequencing-based phenotypes|MS4.4 = MS17 / D4.4|2021 / 2022
