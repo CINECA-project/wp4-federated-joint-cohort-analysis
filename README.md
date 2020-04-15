@@ -41,10 +41,10 @@ There are two milestones not linked to any of the tasks above:
 * **MS4.5** = **MS18** “First training materials available”, due in December 2022
 
 # Table
-**Task**|**Milestone or deliverable**|**Due**
------|-----|-----
-4.1. Privacy/data sharing model|D4.1. Report on trust model for partner sites, and between sites and controlled-access researchers|December 2019, done
-4.2. Execution APIs and environments for federated analyses|D4.2. Framework and APIs for executing federated genomics analyses|December 2020
-4.3. Federated genomic analyses algorithm development|MS4.2 = MS15. Demo workflow running on multiple environments|December 2020
-4.3.1. Federated joint cohort variant genotyping|**MS4.3** = **MS16** “Federated joint variant genotyping”|December 2020
-4.3.2. Federated analysis of GWAS and sequencing data|**D4.3** “Development and application of optimised polygenic risk scores”, due in December 2022|December 2022
+**#**|**Task**|**Milestone or deliverable**|**Due**
+-----|-----|-----|-----
+4.1|Privacy/data sharing model|D4.1|December 2019, done
+4.2|Execution APIs and environments for federated analyses|D4.2|December 2020
+4.3|Federated genomic analyses algorithm development|MS4.2 = MS15|December 2020
+4.3.1|Federated joint cohort variant genotyping|MS4.3 = MS16|December 2020
+4.3.2|Federated analysis of GWAS and sequencing data|D4.3|December 2022
