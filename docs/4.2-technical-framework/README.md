@@ -27,12 +27,12 @@ As a starting point for this deliverable, a Data Workflow Survey for work packag
 | **Transfer protocol**   |  http(s) (manual), (s)ftp (manual), Globus (manual), Aspera (manual), htsget (automated)  |
 |  **Access rights**|  Per-user basis (no external access), token based (ELIXIR AAI, Switch AAI)  |
 #### Figure 1: Data workflow
-![Survey Data Transfer](img/survey-data-transfer.png)
+![Survey Data Transfer](survey-data-transfer.png)
 
 ## Proposed Framework and APIs
 Based upon extensive discussion between CINECA WP4 partners on survey results, it was decided APIs of proposed solution should be compatible with [GA4GH](https://www.ga4gh.org/) cloud API standards. GA4GH's Cloud WS proposes 4 API standards that allow one to share tools/workflows (TRS), execute individual jobs on computing platforms using a standard API (TES), run full workflows on execution platforms (WES), and read/write data objects across clouds in an agnostic way (DRS). These API standards are inspired by large-scale, distributed compute projects & in theory could be developed for different computing & data archive enviornments. Figure 2 depicts typical functional architecture of computing ecosystem proposed by GA4GH Cloud WS.
 #### Figure 2: GA4GH Compatible Cloud Platform (Functional Architecture)
-![ga4gh cloud](img/ga4gh-cloud.png)
+![ga4gh cloud](ga4gh-cloud.png)
 
 ## Deployment Scenarios
 
@@ -41,7 +41,7 @@ Following deployment scenarios for Federated Genomics analysis cloud APIs were d
 ### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
 Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
 #### Figure 3: Deployment Scenario 1
-![ga4gh elixir cloud](img/ga4gh-elixir-cloud.png)
+![ga4gh elixir cloud](ga4gh-elixir-cloud.png)
 
 Deployment of APIs in this scenario have following dependecies:
 * **Docker & Kubernetes:** WES & TES services from ELIXIR Cloud & AAI project only supports Docker & Kubernetes runtime enviornments.
@@ -50,7 +50,7 @@ Deployment of APIs in this scenario have following dependecies:
 ### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
 Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) endpoints are deployed CINECA WP4 wide partners.
 #### Figure 4: Deployment Scenario 2
-![ga4gh wes nextflow tesk](img/ga4gh-wes-nextflow-tesk.png)
+![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk.png)
 
 Deployment of APIs in this scenario have following dependecies:
 * **Kubernetes:** TESK currently only supports Kubernetes runtime enviornments.
@@ -59,7 +59,7 @@ Deployment of APIs in this scenario have following dependecies:
 ### Deployment Scenario 3: Federated Genomic Analysis using Nextflow with multiple executors
 Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executors in this scenario could be different computing enviornments (for ex. SLURM, SGE, Kubernetes etc.) available at CINECA WP4 partner sites. In this deployment scenario, executor enviornment will not be fully compatible with GA4GH TES specifications. For data access, it is assumed data is made available to data staging area within the cluster. Figure 5, depicts this deployment model where a centralized WES (Nextflow manager) & multiple nextflow executor endpoints are deployed CINECA WP4 wide partners.
 #### Figure 5: Deployment Scenario 5
-![ga4gh wes nextflow multiple executor.png](img/ga4gh-wes-nextflow-multiple-executor.png)
+![ga4gh wes nextflow multiple executor.png](ga4gh-wes-nextflow-multiple-executor.png)
 
 Deployment of APIs in this scenario have following dependecies:
 * **Specific Computing Enviornments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
