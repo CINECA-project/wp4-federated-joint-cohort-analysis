@@ -8,9 +8,10 @@
 - [PoC Development and User story](#poc-development-and-user-story)
 
 ## Scope
-Main scope of this deliverable is to gather technical requirements & frameworks for federated analysis platform. In work package subtask 4.3.2, the project partners have described mainly two use cases: 
-* Federated QTL analysis for molecular phenotypes, and 
+Main scope of this deliverable is to gather technical requirements & frameworks for federated analysis platform. In work package subtask 4.3.2, the project partners have described mainly following use cases: 
+* Federated QTL analysis for molecular phenotypes.
 * Simple Workflow Polygenic Risk Scores (PRS) across two similar ethnic background sample sets.
+* Federated joint cohort genotyping
 
 The federated analysis platform defined by this task aims in providing technological solutions for these use cases. Technical requirements are thus gathered based upon these use case descriptions. The aim of this deliverable is to write a short design document that shows the requirements and lists the different options for the solution. 
 
