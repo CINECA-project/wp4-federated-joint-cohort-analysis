@@ -1,4 +1,4 @@
-# Running the dummy Nextflow workflow using TESK
+# Running Nextflow workflows using TESK
 
 ## Log in to Kubernetes cluster
 In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and executor nodes must share the same filesystem.
@@ -37,20 +37,31 @@ nextflow run main.nf -with-docker ${DOCKER_IMAGE} -w ${WORK_DIR}
 
 Important considerations & known limitations:
 * It is important not to use a trailing slash when specifying the endpoint.
-* Also it is mandatory to include a Docker image to run.
-* Specifying memory requirements in Nextflow processes (e.g. `memory '100KB'`). If this is done, the task will hang seemingly forever and never complete.
+* It is mandatory to specify a Docker image to run.
+* Specifying memory requirements in Nextflow processes (e.g. `memory '100KB'`). If this is done, the task will hang seemingly forever and never complete. See https://github.com/CINECA-project/wp4-federated-joint-cohort-analysis/issues/14.
 
-## Building Nextflow from source (optional)
-Since Nextflow support for TES is in alpha version and may contain multiple bugs, we may sometimes make changes to the Nextflow code. Until they are incorporated into master and released, we'll have to build Nextflow from source to make use of those modifications.
+## Note on file transfer
+To transfer files to and from a pod, use `./oc rsync /home/user/dir ${NEXTFLOW_POD}:/tmp`. Note that the second parameter is the _parent_ directory for the sync, so that this example command will create `/tmp/dir` and put contents of `/home/user/dir` in there.
 
-The commands to build Nextflow from scratch are as follows (make sure to substitute the correct fork and branch names):
+# Building Nextflow from source
+Before building, install and select Java 8 as the default. In Ubuntu this can be done by running the commands:
+```
+sudo apt install openjdk-8-jdk
+sudo update-alternatives --config java
+# Then select Java 8 as the default
+```
 
+Build from source (make sure to substitute the correct fork and branch names):
 ```bash
 git clone https://github.com/tskir/nextflow
 cd nextflow
-git checkout ga4gh-test-file-type
-make compile
+git checkout master
+make -j `nproc` pack
 cd ..
 ```
 
-To use this installation instead of system-wide Nextflow, run `bash nextflow/launch.sh [flags]`.
+There are two ways to run this installation instead of system-wide Nextflow:
+* You can run `bash nextflow/launch.sh [flags]`, but it has do be done on the same machine where you compiled it, otherwise the different baked-in paths will not match.
+* You can transfer the self-contained binary generated in the `build/releases/` directory to the Kubernetes pod and run it there.
+
+Note that every time you swap Nextflow versions, you must wipe the `.nextflow` directory, otherwise you might end up still using the old version.
