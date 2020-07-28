@@ -1,5 +1,9 @@
 # Running Nextflow workflows using TESK
 
+This document contains instructions on how to run federated analysis workflows. The protocol for running them is the same; the only difference is the actual Nextflow workflow file to be run, and its parameters. Currently, there are two workflows available:
+* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](hello_world.nf).
+* eQTL workflow in the [eqtl_workflow](eqtl_workflow) directory. See detailed instructions there.
+
 ## Log in to Kubernetes cluster
 In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and executor nodes must share the same filesystem.
 
@@ -23,19 +27,28 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
 1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`
 1. RSH to the required pod: `./oc rsh ${NEXTFLOW_POD}`
 
-## Run the workflow
-Transfer the necessary files to the pod. Then run:
+## Prepare the execution environment
+Transfer the necessary files to the pod. Make sure to put all of them into a file system which is shared between the pod you're in (“login pod”), and the pods which TES installation will use to execute the workflow steps (“executor pods”).
+
+Set the common environment variables:
 ```bash
-export DOCKER_IMAGE=centos
-export WORK_DIR=/mnt
 export NXF_MODE=ga4gh
 export NXF_EXECUTOR=tes
 export NXF_EXECUTOR_TES_ENDPOINT='https://tesk-cineca.c03.k8s-popup.csc.fi'
 export NXF_DEBUG=3
-nextflow run main.nf -with-docker ${DOCKER_IMAGE} -w ${WORK_DIR}
 ```
 
-Important considerations & known limitations:
+## Run the pipeline
+After the previous steps are done, you are ready to run the pipeline. The actual pipeline to be run and its parameters will vary depending on your use case. To run the simplest “hello world” pipeline:
+```bash
+nextflow run hello_world.nf -with-docker centos
+```
+
+See subdirectories for specific pipeline for instructions on how to run them.
+
+# Additional notes and considerations
+
+## Considerations & known limitations of running Nextflow workflows with TES
 * It is important not to use a trailing slash when specifying the endpoint.
 * It is mandatory to specify a Docker image to run.
 * Specifying memory requirements in Nextflow processes (e.g. `memory '100KB'`). If this is done, the task will hang seemingly forever and never complete. See https://github.com/CINECA-project/wp4-federated-joint-cohort-analysis/issues/14.
@@ -43,7 +56,7 @@ Important considerations & known limitations:
 ## Note on file transfer
 To transfer files to and from a pod, use `./oc rsync /home/user/dir ${NEXTFLOW_POD}:/tmp`. Note that the second parameter is the _parent_ directory for the sync, so that this example command will create `/tmp/dir` and put contents of `/home/user/dir` in there.
 
-# Building Nextflow from source
+## Building Nextflow from source
 Before building, install and select Java 8 as the default. In Ubuntu this can be done by running the commands:
 ```
 sudo apt install openjdk-8-jdk
