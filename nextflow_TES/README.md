@@ -10,7 +10,7 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
         # Cloud parameters
         export CLOUD_BASE_URL=c03.k8s-popup.csc.fi:8443
         export CLOUD_NAMESPACE=tesk-cineca
-        export NEXTFLOW_POD=nextflow-dockerhub-7-9bdlm
+        export NEXTFLOW_POD=nextflow-dockerhub-10-gcdt8
 
         # OpenShift command line tools release
         export OC_RELEASE_URL=https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
@@ -20,7 +20,7 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
         | tar --extract --gzip --wildcards --strip-components 1 --file=/dev/stdin '*/oc'
 
 1. In your browser, go to https://${CLOUD_BASE_URL}/console/command-line. Copy and execute the `./oc login ...` command.
-1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`
+1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`. To list all pods, use the command: `./oc get pods`
 1. RSH to the required pod: `./oc rsh ${NEXTFLOW_POD}`
 
 ## Run the workflow
@@ -56,9 +56,11 @@ Build from source (make sure to substitute the correct fork and branch names):
 git clone https://github.com/tskir/nextflow
 cd nextflow
 git checkout master
-make -j `nproc` pack
+make packGA4GH
 cd ..
 ```
+
+Note that the default `make pack` will produce a binary which does **not** include GA4GH support, so you have to run `make packGA4GH` instead. This command is introduced in a PR https://github.com/nextflow-io/nextflow/pull/1666, and is yet to be merged.
 
 There are two ways to run this installation instead of system-wide Nextflow:
 * You can run `bash nextflow/launch.sh [flags]`, but it has do be done on the same machine where you compiled it, otherwise the different baked-in paths will not match.
