@@ -14,7 +14,6 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
         # Cloud parameters
         export CLOUD_BASE_URL=c03.k8s-popup.csc.fi:8443
         export CLOUD_NAMESPACE=tesk-cineca
-        export NEXTFLOW_POD=nextflow-dockerhub-10-gcdt8
 
         # OpenShift command line tools release
         export OC_RELEASE_URL=https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
@@ -23,9 +22,9 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
 
         wget -qO- ${OC_RELEASE_URL} \
         | tar --extract --gzip --wildcards --strip-components 1 --file=/dev/stdin '*/oc'
-
 1. In your browser, go to https://${CLOUD_BASE_URL}/console/command-line. Copy and execute the `./oc login ...` command.
-1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`. To list all pods, use the command: `./oc get pods`
+1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`.
+1. List all pods using the command: `./oc get pods`. Find pod which name starts with `nextflow-dockerhub`. Put it into `NEXTFLOW_POD` variable.
 1. RSH to the required pod: `./oc rsh ${NEXTFLOW_POD}`
 
 ## Prepare the execution environment
