@@ -80,9 +80,9 @@ There are two ways to run this installation instead of system-wide Nextflow:
 
 Note that every time you swap Nextflow versions, you must wipe the `.nextflow` directory, otherwise you might end up still using the old version.
 
-# Running Nextflow workflows using SLURM at [University of Tartu HPC](https://hpc.ut.ee/en/home/)
+# Running Nextflow workflows using SLURM 
 
-The same hello_world.nf workflow can also be executed using the SLURM resource manager installed at many compute clusters. For example, at the University of Tartu, we can use the following command:
+The same hello_world.nf workflow can also be executed using the SLURM resource manager installed at many compute clusters. For example, at the at [University of Tartu HPC](https://hpc.ut.ee/en/home/), we can use the following command:
 
 ```bash
 nextflow hello_world.nf -with-singularity centos \
