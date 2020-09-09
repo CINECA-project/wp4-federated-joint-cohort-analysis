@@ -79,3 +79,17 @@ There are two ways to run this installation instead of system-wide Nextflow:
 * You can transfer the self-contained binary generated in the `build/releases/` directory to the Kubernetes pod and run it there.
 
 Note that every time you swap Nextflow versions, you must wipe the `.nextflow` directory, otherwise you might end up still using the old version.
+
+# Running Nextflow workflows using SLURM at [University of Tartu HPC](https://hpc.ut.ee/en/home/)
+
+The same hello_world.nf workflow can also be executed using the SLURM resource manager installed at many compute clusters. For example, at the University of Tartu, we can use the following command:
+
+```bash
+nextflow hello_world.nf -with-singularity centos \
+        -process.executor slurm \
+        -process.queue main
+```
+
+Note that we had to replace `-with-docker` with `-with-singularity`, because Docker is not supported in that environment. We also had to specify the executor and the name of the queue. 
+
+
