@@ -14,3 +14,26 @@ nextflow eqtl.nf \
 ```
 
 It should take up to 5–10 minutes to execute, and the results should appear as four `*.counts` files in the `result/` subdirectory.
+
+# University of Tartu HPC
+
+We can also execute the same workflow at Univeristy of Tartu HPC:
+
+```bash
+nextflow eqtl.nf \
+  --studyFile study_file.txt \
+  --hisat2_index hisat2_index/hisat2_index \
+  --gtf_file Homo_sapiens.GRCh38.91.chr21.gtf \
+  -with-singularity nfcore/rnaseq:1.4.2 \
+  -process.executor slurm
+```
+
+# Verifying the results 
+
+To make sure that the output is correct, we can check how many RNA-seq reads overlap the PFKL gene (ENSG00000141959) in the eipl_A sample. If the workflow was executed correctly then the result should be 9314.
+
+```bash
+(base) [a72094@rocket eqtl_workflow]$ grep ENSG00000141959 results/eipl_A.counts | cut -f 7
+9314
+```
+
