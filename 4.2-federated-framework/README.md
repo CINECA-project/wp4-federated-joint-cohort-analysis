@@ -107,7 +107,7 @@ Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES servi
 
 #### Figure 3: Deployment Scenario 1
 
-![ga4gh elixir cloud](ga4gh-elixir-cloud.png)
+![ga4gh elixir cloud](ga4gh-elixir-cloud.drawio.png)
 
 Deployment of APIs in this scenario have following dependecies:
 
