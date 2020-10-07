@@ -45,7 +45,7 @@ The survey showed that the data sources needed for the analysis varies a lot. Th
 
 ### Figure 1: Data workflow
 
-![Survey Data Transfer](survey-data-transfer.drawio.svg)
+![Survey Data Transfer](survey-data-transfer.drawio.png)
 
 ## Proposed Framework and APIs
 
