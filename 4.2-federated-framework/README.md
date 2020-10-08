@@ -9,6 +9,8 @@ Note: the deliverable text has since been updated [in Google Docs](https://docs.
 - [Proposed Framework and APIs](#proposed-framework-and-apis)
 - [Deployment Scenarios](#deployment-scenarios)
 - [PoC Development and User story](#poc-development-and-user-story)
+- [Abbreviations and terminoligy](#abbreviations-and-terminoligy)
+- [Data Workflow Survey](#Data-Workflow-Survey)
 
 ## Scope
 
@@ -196,6 +198,8 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 - **PsyCoLaus** psychiatric phenotypization
 - **SMPs**, Single-nucleotide polymorphism
 - **CNV**, Copy number variation
+- **RNA**, Ribonucleic acid
+- **HRC**, Human Random Control
 
 ## Data Workflow Survey
 
