@@ -14,17 +14,17 @@ Note: the deliverable text has since been updated [in Google Docs](https://docs.
 
 ## Scope
 
-Main scope of this deliverable is to gather technical requirements & frameworks for federated analysis platform. In work package subtask 4.3.2, the project partners have described mainly following use cases:
+The main scope of this deliverable is to gather technical requirements and frameworks for a federated analysis platform. In the work package subtask number 4.3.2, the project partners have described mainly the following use cases:
 
-- Federated QTL analysis for molecular phenotypes.
-- Simple Workflow Polygenic Risk Scores (PRS) across two similar ethnic background sample sets.
-- Federated joint cohort genotyping
+- A federated QTL analysis for molecular phenotypes.
+- A simple Workflow for Polygenic Risk Scores (PRS) across two similar ethnic background sample sets.
+- A federated joint cohort genotyping.
 
-The federated analysis platform defined by this task aims in providing technological solutions for these use cases. Technical requirements are thus gathered based upon these use case descriptions. The aim of this deliverable is to write a short design document that shows the requirements and lists the different options for the solution.
+The federated analysis platform defined by this task aims to provide technological solutions for these use cases. For doing so, technical requirements are gathered based on these use case descriptions. The aim of this deliverable is to write a short design document that shows the requirements, and lists the different options for a solution.
 
 ## Background
 
-As a starting point for this deliverable, a [Data Workflow Survey](#Data-Workflow-Survey) for work package partners was performed. A total of 6 work package partners participated in survey:
+As a starting point for this deliverable, a data workflow survey for work package partners was performed. See below in the "[Data Workflow Survey](#Data-Workflow-Survey)" section the questions and all answers. A total of 6 work package partners participated in the survey:
 
 - HES-SO & SIB, Switzerland
 - University of Tartu, Estonia
@@ -33,7 +33,7 @@ As a starting point for this deliverable, a [Data Workflow Survey](#Data-Workflo
 - University of Cape Town, South Africa
 - EGA group, EMBL-EBI, UK
 
-The survey showed that the data sources needed for the analysis varies a lot. There are four archives (see [Table 1](#table-1:-data-workflow-survey-summary)) that are used for accessing the data. However, according to the survey there are similarities in the overall architecture of computing environments used for the analysis (see [Figure 1](#figure-1:-data-workflow)). Usually the data is fetched from the data source and placed in an internal  storage system and accessed by the computing cluster. It is very rare to stream the data directly (e.g. using htsget streaming protocol) from the archive for the computation. In most cases data transfer happens using traditional transfer protocols, like http(s) or (s)ftp. Also, both the data and file types vary a lot and this limits the transfer protocols to the traditional ones. Data types include genome sequences, phenotype data and basically any other data from presentation files to text documents.
+The survey showed that the data sources needed for the analysis varies a lot between sites. There are four data storage archives (see [Table 1](#table-1:-data-workflow-survey-summary)) that are used for accessing the data. However, according to the survey there are similarities in the overall architecture of computing environments used for the analysis (see [Figure 1](#figure-1:-data-workflow)). Usually the data is fetched from the data storage and placed in an internal storage system, that is then accessed by the computing cluster nodes. It is very rare to stream the data directly from the data storage archive, e.g. using the 'htsget' streaming protocol. In most cases data transfer happens using traditional and common transfer protocols, like http(s) or (s)ftp. Also both the data and the file types vary a lot, this limits the transfer protocols to traditional ones. Data types include mostly genome sequences, and phenotype data, but also basically any other data type from presentation files to text documents.
 
 ### Table 1: Data workflow survey summary
 
@@ -55,13 +55,13 @@ Based upon extensive discussion between CINECA WP4 partners on survey results, i
 
 ### Figure 2: GA4GH Compatible Cloud Platform (Functional Architecture)
 
-![ga4gh cloud](ga4gh-cloud.drawio.png)
+![ga4gh cloud](./ga4gh-cloud.png)
 
 ## Results
 
 ### dbGap: Data Access Workflow
 
-![dbGAP](./dbGap.drawio.png)
+![dbGAP](./dbGAP.drawio.png)
 
 **Prerequisites**: SRA toolkit should be installed in Data Staging Area, User must have access to the access controlled data & have access to its dbGAP repository key in Data staging area.
 
@@ -123,7 +123,7 @@ Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](http
 
 #### Figure 4: Deployment Scenario 2
 
-![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk..drawio.png)
+![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk.drawio.png)
 
 Deployment of APIs in this scenario have following dependecies:
 
@@ -200,8 +200,9 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 - **CNV**, Copy number variation
 - **RNA**, Ribonucleic acid
 - **HRC**, Human Random Control
+- **PRS**, Polygenic Risk Scores
 
-## Data Workflow Survey
+## Data Workflow Survey, questions and answers
 
 ### Questions
 
@@ -223,9 +224,11 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 
 1. We use data from various sources. Some of the data are stored locally on the network file system of our high performance computing center, but we also routinely use data from public (European Nucleotide Archive (ENA), Gene Expression Omnibus (GEO)) and controlled access (dbGaP, EGA, Synapse, Google Cloud) repositories.
 1. We primarily use three types of data:
-  - Genotype data (various file formats that need to be harmonized to a common VCF format before it can be used).
-  - RNA sequencing data (mostly in fastq format, dbGAP, GEO and EGA also use other formats (.cram, .bam, .sra).
-  - Public references datasets (reference genome sequence, gene annotations, aligner index files, etc)
+
+- Genotype data (various file formats that need to be harmonized to a common VCF format before it can be used).
+- RNA sequencing data (mostly in fastq format, dbGAP, GEO and EGA also use other formats (.cram, .bam, .sra).
+- Public references datasets (reference genome sequence, gene annotations, aligner index files, etc)
+
 3. We currently transfer the data manually to our local compute environment, convert to uniform file format (all RNA-seq data to fastq format and all genotype data to VCF format using the same reference genome coordinates). Our computation workflow accesses the data from our local network drive. Automating this in the general case can be challenging due to different access control mechanisms (dbGaP, EGA, Synapse, ad-hoc sFTP sites), file formats (.fastq, .sra, .bam, .cram) and incomplete sample metadata (especially a problem with EGA).
 4. The data are first downloaded manually to a local network drive.
 
@@ -233,10 +236,12 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 
 1. Our data sources are hosted on our local compute cluster. The BIOS data has been generated by multiple Dutch Universities, from their respective biobanks (LifeLines, Leiden Longevity study, Rotterdam Study, Dutch Twin Registry). Public resources are used for follow-up analyses (e.g. interpretation of results), including data from SRA/ENA, GEO, and other datasets.
 1. We primarily use three types of data:
-  - Genotype data (various file formats that need to be harmonized to a common VCF format before it can be used). Our current software uses an in-house developed representation of these genotypes (TriTyper). Genotype data is generally collected from genotype arrays, and subsequently HRC imputed. If represented as VCF files, they are indexed using tabix.
-  - RNA sequencing data (mostly in fastq format), or tab-separated flat text tables containing counts, including all study individuals.
-  - Public references datasets (reference genome sequence, gene annotations, aligner index files, etc)
-  - Optionally, cell count data (e.g. number of different kinds of white blood cells) and other sample meta-data (e.g. batch, lane, etc) to correct for confounding factors.
+
+- Genotype data (various file formats that need to be harmonized to a common VCF format before it can be used). Our current software uses an in-house developed representation of these genotypes (TriTyper). Genotype data is generally collected from genotype arrays, and subsequently HRC imputed. If represented as VCF files, they are indexed using tabix.
+- RNA sequencing data (mostly in fastq format), or tab-separated flat text tables containing counts, including all study individuals.
+- Public references datasets (reference genome sequence, gene annotations, aligner index files, etc)
+- Optionally, cell count data (e.g. number of different kinds of white blood cells) and other sample meta-data (e.g. batch, lane, etc) to correct for confounding factors.
+
 3. We currently transfer the data manually to our local compute environment, convert to uniform file format. Our eQTL mapping approach uses the in-house, binary TriTyper format for genotype input, and tab-separated flat text count files as input for RNA-seq data. Our computation workflow accesses the data from our local network drive. No explicit APIs or protocols are currently being employed.
 4. Access rights are assigned on a per-user basis on our compute cluster. No access from external parties is available.
 
@@ -253,3 +258,10 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 1. Genotype data including both sequence and chip data, phenotype data (demographics, disease status, medication...)
 1. Data are ingested manually to computing clusters using sftp and globus online.
 1. Data are local to the workflows to authenticated users and. No external access interface available for data access.
+
+#### European Genome-phenome Archive (EMBL-EBI)
+
+1. Human sequencing data, either exome or whole genome from multiple cohorts
+1. Whole genome sequencing aligned to a reference genome. Exome sequencing aligned to a reference genome
+1. htsget for streaming, AAI to gain real-time access
+1. This depends on the access protocol of the sources. I imagine that the initial application for access will happen off-line. The workflow would use the provisions in htsget to authenticate and obtain a token for real-time access.
