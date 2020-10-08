@@ -201,6 +201,8 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 - **RNA**, Ribonucleic acid
 - **HRC**, Human Random Control
 - **PRS**, Polygenic Risk Scores
+- **DSA**, Data Staging Area
+- **MD5**, Message-digest algorithm, a non-cryptographic hash function
 
 ## Data Workflow Survey, questions and answers
 
