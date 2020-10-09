@@ -66,11 +66,11 @@ These 4 API standards are inspired by large-scale distributed compute projects a
 
 ## Deployment Scenarios
 
-The following 3 deployment scenarios for Federated Genomics analysis cloud APIs were discussed:
+8The following 3 deployment scenarios were discussed for Federated Genomics analysis cloud APIs.
 
 ### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
 
-Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
+Under this deployment scenario, CINECA WP4 partners can deploy a WES and TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to the data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES and federated TES endpoints are deployed CINECA WP4 wide partners.
 
 #### Figure 3: Deployment Scenario 1
 
@@ -78,22 +78,21 @@ Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES servi
 
 Deployment of APIs in this scenario have following dependecies:
 
-***Docker & Kubernetes:** WES & TES services from ELIXIR Cloud & AAI project only supports Docker & Kubernetes runtime environments.
-
-- **CWL Workflows:** Elixir Cloud & AAI APIs currently only support CWL workflow execution.
+- **Docker** and **Kubernetes:** WES and TES services from ELIXIR Cloud and AAI project only supports Docker and Kubernetes runtime environments.
+- **CWL Workflows:** Elixir Cloud and AAI APIs currently only supports CWL workflow execution.
 
 ### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
 
-Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) endpoints are deployed CINECA WP4 wide partners.
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (and Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as a WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed the data is made available to the data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) and federated TES (TESK) endpoints are deployed in several CINECA WP4 wide partners.
 
 #### Figure 4: Deployment Scenario 2
 
 ![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk.drawio.png)
 
-Deployment of APIs in this scenario have following dependecies:
+Deployment of APIs in this scenario have the following dependecies:
 
-- **Kubernetes:** TESK currently only supports Kubernetes runtime enviornments.
-- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+- **Docker** and **Kubernetes** TESK currently only supports Kubernetes runtime enviornments.
+- **Nextflow Workflows** Nextflow manager supports only execution of Nextflow workflows.
 
 ### Deployment Scenario 3: Federated Genomic Analysis using Nextflow with multiple executors
 
@@ -105,18 +104,18 @@ Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](http
 
 Deployment of APIs in this scenario have following dependencies:
 
-- **Specific Computing Environments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
-- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+- **Specific Computing Environments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used (Local, Grid Engine, LSF, SLURM, HTCondor, Kubernetes, and more)
+- **Nextflow Workflows** Nextflow manager supports only execution of Nextflow workflows.
 
 ## PoC Development and User story
 
-A minimum viable Proof of Concept(PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence PoC is being developed as per **Deployment Model 2**. To ease development efforts, Data staging for workflow would be done via virtual cohort running at CSC's cPouta cloud. Table 2 lists services which are being developed & deployed as per this PoC.
+A minimum viable Proof of Concept (PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence a PoC is being developed as per **Deployment Model 2**. To ease the development efforts, a data staging area for the workflows would be implemented via a virtual cohort running at CSC's cPouta cloud. Table 2 lists the services which are being developed and deployed as per this PoC.
 
 ### Table 2: PoC Development Details
 
 | Endpoint | Technology  | Deployment Details|
 |:--------|:---|:---|
-| WES | Nextflow Manager | TBD|
+| WES | Nextflow Manager | Deployed at CSC's Rahti cloud |
 | TES 1 | TESK  | Deployed at CSC's Rahti cloud|
 | TES 2 | TESK  | TBD, EMBL-EBI? |
 | TES X | TESK  | TBD, CINECA-WP4 Partner X? |
@@ -124,16 +123,14 @@ A minimum viable Proof of Concept(PoC) is also being developed for this delivera
 
 ### PoC User Story
 
-This PoC is being developed to support federated eQTL analysis workflow with following user story:
+This PoC is being developed to support federated eQTL analysis workflows with the following user story:
 
-- User submits Nextflow workflow to WES endpoint.
-- Workflow contains processes which runs private analysis on Cohort data available to specific TES endpoint(s)
-- Nextflow manager delegates processes to corresponding TES endpoints.
-- Private analysis is executed on corresponding TES endpoints.
-- Results of analysis from different TES endpoints are then aggregated at specific TES endpoint or WES endpoint.
-- Final aggregated result is made available to end user.
-
-## Results
+- User submits a Nextflow workflow to a WES endpoint.
+- The workflow contains processes which run private analysis on the Cohort data available to specific TES endpoint(s)
+- The Nextflow manager delegates processes to the corresponding TES endpoints.
+- The private analysis is executed on the orresponding TES endpoints.
+- The results of the analysis from different TES endpoints are then aggregated at a specific TES endpoint or WES endpoint.
+- The final aggregated result is made available to the end user.
 
 ### dbGap: Data Access Workflow
 
@@ -175,41 +172,44 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 1. Files are being downloaded to the Data staging area. User can optionally check integrity of file by Md5 checksum of file.
 1. Data downloaded in step 4 are in decrypted format & can be now transferred to data staging area.
 
-## Abbreviations and terminoligy
+## Abbreviations and terminology
 
-- **EGA**, European Genome-Phenome Archive.
-- **dbGAP**, database of Genotypes and Phenotypes.
-- **ENA**, European Nucleotide Archive
-- **GEO**, Gene Expression Omnibus
-- **CINECA**, Common Infrastructure for National Cohorts in Europe, Canada, and Africa
-- **FTP**, file transfer protocol
 - **AAI**, Authentication and Authorization Infrastructure
-- **QTL**, Quantitative trait locus
-- **HES-SO**, Haute école spécialisée de Suisse occidentale
-- **SIB**, Swiss Institute of Bioinformatics
-- **EMBL-EBI**, European Molecular Biology Laboratory, European Bioinformatics Institute
-- **CRAM**, compressed columnar file format for storing biological sequences aligned to a reference sequence
 - **BAM**, Binary Alignment Map
-- **SAM**, Sequence Alignment Map
-- **FASTQ**, text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores. Both the sequence letter and quality score are each encoded with a single ASCII character for brevity.
-- **VCF**, Variant Call Format
-- **CSV**, comma separated data
-- **DATS**, Data Tags Suite
-- **FHIR**, Fast Healthcare Interoperability Resources
-- **XML**, Extensible Markup Language
-- **TES**, Task Execution Service
-- **WES**, Workflow Execution Service
-- **DRS**, Data repository service
-- **TRS**, Tool repository service
-- **CoLasus**, study is a population-based cohort of 6734 middle-aged participants from Lausanne (Switzerland)
-- **PsyCoLaus** psychiatric phenotypization
-- **SMPs**, Single-nucleotide polymorphism
+- **CINECA**, Common Infrastructure for National Cohorts in Europe, Canada, and Africa
 - **CNV**, Copy number variation
-- **RNA**, Ribonucleic acid
-- **HRC**, Human Random Control
-- **PRS**, Polygenic Risk Scores
+- **CoLasus**, study is a population-based cohort of 6734 middle-aged participants from Lausanne (Switzerland)
+- **CRAM**, compressed columnar file format for storing biological sequences aligned to a reference sequence
+- **CSV**, comma separated data
+- **CWL**, Common Workflow Language
+- **DATS**, Data Tags Suite
+- **dbGAP**, database of Genotypes and Phenotypes.
+- **DRS**, Data repository service
 - **DSA**, Data Staging Area
+- **EGA**, European Genome-Phenome Archive.
+- **EMBL-EBI**, European Molecular Biology Laboratory, European Bioinformatics Institute
+- **ENA**, European Nucleotide Archive
+- **eQTLs**, Expression quantitative trait loci
+- **FASTQ**, text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores. Both the sequence letter and quality score are each encoded with a single ASCII character for brevity.
+- **FHIR**, Fast Healthcare Interoperability Resources
+- **FTP**, file transfer protocol
+- **GEO**, Gene Expression Omnibus
+- **HES-SO**, Haute école spécialisée de Suisse occidentale
+- **HRC**, Human Random Control
 - **MD5**, Message-digest algorithm, a non-cryptographic hash function
+- **PRS**, Polygenic Risk Scores
+- **PsyCoLaus** psychiatric phenotypization
+- **QTL**, Quantitative trait locus
+- **RNA**, Ribonucleic acid
+- **SAM**, Sequence Alignment Map
+- **SIB**, Swiss Institute of Bioinformatics
+- **SMPs**, Single-nucleotide polymorphism
+- **SRA**, Sequence Read Archive
+- **TES**, Task Execution Service
+- **TRS**, Tool repository service
+- **VCF**, Variant Call Format
+- **WES**, Workflow Execution Service
+- **XML**, Extensible Markup Language
 
 ## Data Workflow Survey, questions and answers
 
