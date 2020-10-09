@@ -51,11 +51,87 @@ The survey showed that the data sources needed for the analysis varies a lot bet
 
 ## Proposed Framework and APIs
 
-Based upon extensive discussion between CINECA WP4 partners on survey results, it was decided APIs of proposed solution should be compatible with [GA4GH](https://www.ga4gh.org/) cloud API standards. GA4GH's Cloud WS proposes 4 API standards that allow one to share tools/workflows (TRS), execute individual jobs on computing platforms using a standard API (TES), run full workflows on execution platforms (WES), and read/write data objects across clouds in an agnostic way (DRS). These API standards are inspired by large-scale, distributed compute projects & in theory could be developed for different computing & data archive environments. Figure 2 depicts typical functional architecture of computing ecosystem proposed by GA4GH Cloud WS.
+Based upon extensive discussion on survey results between the CINECA WP4 partners, it was decided that the APIs of the proposed solution should be compatible with [GA4GH](https://www.ga4gh.org/) cloud API standards. GA4GH's Cloud Web Services proposes 4 API standards:
+
+- **TRS** allows to share tools and workflows
+- **TES** lets execute individual jobs on computing platforms using a standard API
+- **WES** allows to run full workflows on execution platforms
+- **DRS** permits, in an agnostoc way, to read and write data objects across clouds.
+
+These 4 API standards are inspired by large-scale distributed compute projects and, in theory they could be implemented for different computing and data archive environments. The Figure 2 depicts the typical functional architecture of a computing ecosystem proposed by GA4GH Cloud Web Services.
 
 ### Figure 2: GA4GH Compatible Cloud Platform (Functional Architecture)
 
 ![ga4gh cloud](./ga4gh-cloud.png)
+
+## Deployment Scenarios
+
+The following 3 deployment scenarios for Federated Genomics analysis cloud APIs were discussed:
+
+### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
+
+Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
+
+#### Figure 3: Deployment Scenario 1
+
+![ga4gh elixir cloud](ga4gh-elixir-cloud.drawio.png)
+
+Deployment of APIs in this scenario have following dependecies:
+
+***Docker & Kubernetes:** WES & TES services from ELIXIR Cloud & AAI project only supports Docker & Kubernetes runtime environments.
+
+- **CWL Workflows:** Elixir Cloud & AAI APIs currently only support CWL workflow execution.
+
+### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
+
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) endpoints are deployed CINECA WP4 wide partners.
+
+#### Figure 4: Deployment Scenario 2
+
+![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk.drawio.png)
+
+Deployment of APIs in this scenario have following dependecies:
+
+- **Kubernetes:** TESK currently only supports Kubernetes runtime enviornments.
+- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+
+### Deployment Scenario 3: Federated Genomic Analysis using Nextflow with multiple executors
+
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executors in this scenario could be different computing environments (for ex. SLURM, SGE, Kubernetes etc.) available at CINECA WP4 partner sites. In this deployment scenario, executor environment will not be fully compatible with GA4GH TES specifications. For data access, it is assumed data is made available to data staging area within the cluster. Figure 5, depicts this deployment model where a centralized WES (Nextflow manager) & multiple nextflow executor endpoints are deployed CINECA WP4 wide partners.
+
+#### Figure 5: Deployment Scenario 3
+
+![ga4gh wes nextflow multiple executor.png](ga4gh-wes-nextflow-multiple-executor.drawio.png)
+
+Deployment of APIs in this scenario have following dependencies:
+
+- **Specific Computing Environments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
+- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
+
+## PoC Development and User story
+
+A minimum viable Proof of Concept(PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence PoC is being developed as per **Deployment Model 2**. To ease development efforts, Data staging for workflow would be done via virtual cohort running at CSC's cPouta cloud. Table 2 lists services which are being developed & deployed as per this PoC.
+
+### Table 2: PoC Development Details
+
+| Endpoint | Technology  | Deployment Details|
+|:--------|:---|:---|
+| WES | Nextflow Manager | TBD|
+| TES 1 | TESK  | Deployed at CSC's Rahti cloud|
+| TES 2 | TESK  | TBD, EMBL-EBI? |
+| TES X | TESK  | TBD, CINECA-WP4 Partner X? |
+| Virtual Cohort | Federated EGA  | Deployed at CSC's cPouta cloud|
+
+### PoC User Story
+
+This PoC is being developed to support federated eQTL analysis workflow with following user story:
+
+- User submits Nextflow workflow to WES endpoint.
+- Workflow contains processes which runs private analysis on Cohort data available to specific TES endpoint(s)
+- Nextflow manager delegates processes to corresponding TES endpoints.
+- Private analysis is executed on corresponding TES endpoints.
+- Results of analysis from different TES endpoints are then aggregated at specific TES endpoint or WES endpoint.
+- Final aggregated result is made available to end user.
 
 ## Results
 
@@ -98,75 +174,6 @@ Based upon extensive discussion between CINECA WP4 partners on survey results, i
 1. User request for the files he want to download.
 1. Files are being downloaded to the Data staging area. User can optionally check integrity of file by Md5 checksum of file.
 1. Data downloaded in step 4 are in decrypted format & can be now transferred to data staging area.
-
-## Deployment Scenarios
-
-Following deployment scenarios for Federated Genomics analysis cloud APIs were discussed:
-
-### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
-
-Under this deployment scenario, CINECA WP4 partners can deploy a WES & TES services being developed by [ELIXIR Cloud & AAI](https://elixir-europe.github.io/cloud/) project on their infrastructure. For data access, it is assumed data is made available to data staging area within the cluster. Figure 3, depicts this deployment model where a centralized WES & federated TES endpoints are deployed CINECA WP4 wide partners.
-
-#### Figure 3: Deployment Scenario 1
-
-![ga4gh elixir cloud](ga4gh-elixir-cloud.drawio.png)
-
-Deployment of APIs in this scenario have following dependecies:
-
-***Docker & Kubernetes:** WES & TES services from ELIXIR Cloud & AAI project only supports Docker & Kubernetes runtime environments.
-
-- **CWL Workflows:** Elixir Cloud & AAI APIs currently only support CWL workflow execution.
-
-### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
-
-Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed data is made available to data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) & federated TES (TESK) endpoints are deployed CINECA WP4 wide partners.
-
-#### Figure 4: Deployment Scenario 2
-
-![ga4gh wes nextflow tesk](ga4gh-wes-nextflow-tesk.drawio.png)
-
-Deployment of APIs in this scenario have following dependecies:
-
-- **Kubernetes:** TESK currently only supports Kubernetes runtime enviornments.
-- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
-
-### Deployment Scenario 3: Federated Genomic Analysis using Nextflow with multiple executors
-
-Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (& Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as WES endpoint. Nextflow executors in this scenario could be different computing environments (for ex. SLURM, SGE, Kubernetes etc.) available at CINECA WP4 partner sites. In this deployment scenario, executor environment will not be fully compatible with GA4GH TES specifications. For data access, it is assumed data is made available to data staging area within the cluster. Figure 5, depicts this deployment model where a centralized WES (Nextflow manager) & multiple nextflow executor endpoints are deployed CINECA WP4 wide partners.
-
-#### Figure 5: Deployment Scenario 5
-
-![ga4gh wes nextflow multiple executor.png](ga4gh-wes-nextflow-multiple-executor.drawio.png)
-
-Deployment of APIs in this scenario have following dependencies:
-
-- **Specific Computing Environments** Specific computing enviornments [supported](https://www.nextflow.io/docs/latest/executor.html) by Nextflow executors could be used.
-- **Nextflow Workflows:** Nextflow manager supports only execution of Nextflow workflows .
-
-## PoC Development and User story
-
-A minimum viable Proof of Concept(PoC) is also being developed for this deliverable. Nextflow is being decided as common technology nominator among the CINECA WP4 partners, hence PoC is being developed as per **Deployment Model 2**. To ease development efforts, Data staging for workflow would be done via virtual cohort running at CSC's cPouta cloud. Table 2 lists services which are being developed & deployed as per this PoC.
-
-### Table 2: PoC Development Details
-
-| Endpoint | Technology  | Deployment Details|
-|:--------|:---|:---|
-| WES | Nextflow Manager | TBD|
-| TES 1 | TESK  | Deployed at CSC's Rahti cloud|
-| TES 2 | TESK  | TBD, EMBL-EBI? |
-| TES X | TESK  | TBD, CINECA-WP4 Partner X? |
-| Virtual Cohort | Federated EGA  | Deployed at CSC's cPouta cloud|
-
-### PoC User Story
-
-This PoC is being developed to support federated eQTL analysis workflow with following user story:
-
-- User submits Nextflow workflow to WES endpoint.
-- Workflow contains processes which runs private analysis on Cohort data available to specific TES endpoint(s)
-- Nextflow manager delegates processes to corresponding TES endpoints.
-- Private analysis is executed on corresponding TES endpoints.
-- Results of analysis from different TES endpoints are then aggregated at specific TES endpoint or WES endpoint.
-- Final aggregated result is made available to end user.
 
 ## Abbreviations and terminoligy
 
