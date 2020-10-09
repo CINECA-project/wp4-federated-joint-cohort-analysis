@@ -125,7 +125,7 @@ A minimum viable Proof of Concept (PoC) is also being developed for this deliver
 
 This PoC is being developed to support federated eQTL analysis workflows with the following user story:
 
-- User submits a Nextflow workflow to a WES endpoint.
+- The user submits a Nextflow workflow to a WES endpoint.
 - The workflow contains processes which run private analysis on the Cohort data available to specific TES endpoint(s)
 - The Nextflow manager delegates processes to the corresponding TES endpoints.
 - The private analysis is executed on the orresponding TES endpoints.
@@ -136,41 +136,41 @@ This PoC is being developed to support federated eQTL analysis workflows with th
 
 ![dbGAP](./dbGAP.drawio.png)
 
-**Prerequisites**: SRA toolkit should be installed in Data Staging Area, User must have access to the access controlled data & have access to its dbGAP repository key in Data staging area.
+**Prerequisites**: THe SRA toolkit should be installed in the Data Staging Area, the User must have access to the access controlled data and have access to its dbGAP repository key in the Data staging area.
 
-1. Start SRA toolkit & review its configuration. Import your dbGAP repository key in SRA toolkit & authenticate client with dbGAP.
+1. Start the SRA toolkit and review its configuration. Import your dbGAP repository key in the SRA toolkit and authenticate the client with dbGAP.
 1. dbGAP authenticates the requested access.
-1. Navigate the file you want to import, select the download location on staging area & confirm import of the file.
-1. SRA toolkit starts file download if file access is allowed as per RBAC policy.
-1. Downloaded file in step 5 is encrypted. SRA tookit’s ‘vdb-decrypt’ utility decrypts the data.
-1. Decrypted file could be transferred to local computing cluster for computation.
+1. Navigate the file you want to import, select the download location on staging area and confirm the import of the file.
+1. SRA toolkit starts the file download, only if file access is allowed as per the RBAC policy.
+1. The downloaded file in step 5 is encrypted. The SRA tookit’s ‘vdb-decrypt’ utility decrypts the data.
+1. The decrypted file could be transferred to the local computing cluster for computation.
 
 ### EGA: Data Access Workflow
 
 ![EGA](./EGA.drawio.png)
 
-**Prerequisites**: EGA client/Java should be installed in Data Staging Area. User must have valid EGA account & access to his encryption/decryption key in the data staging area.
+**Prerequisites**: The EGA client (Java) should be installed in the Data Staging Area. The User must have a valid EGA account with access to his/her encryption and decryption key in the data staging area.
 
-1. User starts EGA client in data staging area & provide its credentials & authenticate to EGA.
+1. The user starts the EGA client in data staging area and provides her/his credentials, and finaly authenticates to EGA.
 1. EGA authenticates the user access.
-1. User can list the File(s) in Dataset(s) user has whitelisted access to.
-1. EGA provide list of File(s)/Dataset(s) user has access to.
-1. User requests download of File(s) &/or Dataset(s) he has access to.
-1. EGA starts download of requested File(s) &/or datasets in Data staging area.
-1. Data downloaded in above step is encrypted. User can decrypt downloaded using EGA client with his decryption key.
-1. Decrypted data now can be transferred to local computing services.
+1. The user requests the list of File(s) he/she has access to in the Dataset(s).
+1. EGA provides the list of File(s) and Dataset(s).
+1. The user requests to download some of the File(s) and/or Dataset(s).
+1. EGA starts to download the requested File(s) and/or datasets into the Data staging area.
+1. The data downloaded in the previous step is encrypted. The user can decrypt the downloaded files providing her/his  decryption key to the EG client.
+1. The decrypted data now can be transferred to the local computing services.
 
 ### ENA: Data Access Workflow
 
 ![ENA](./ENA.drawio.png)
 
-**Prerequisites**: User must have supported ENA client(FTP, GridFTP, ENA browser or Aspera clients) installed in Data Staging Area. User must have valid ENA account.
+**Prerequisites**: The user must have a supported ENA client (FTP, GridFTP, ENA browser or Aspera clients) installed in the Data Staging Area. The user must have a valid ENA account.
 
-1. User authenticates using one of valid ENA clients to the ENA service
-1. Use is authenticated by ENA service.
-1. User request for the files he want to download.
-1. Files are being downloaded to the Data staging area. User can optionally check integrity of file by Md5 checksum of file.
-1. Data downloaded in step 4 are in decrypted format & can be now transferred to data staging area.
+1. The user authenticates using one of the valid ENA clients to the ENA service
+1. The user is authenticated by the ENA service.
+1. The user requests for the files she/he wants to download.
+1. Files are downloaded to the Data staging area. The user can optionally check the integrity of the files by comparing the Md5 checksum of each of the files.
+1. The data downloaded in step 4 is already decrypted format and can be now transferred to the data staging area.
 
 ## Abbreviations and terminology
 
@@ -194,12 +194,15 @@ This PoC is being developed to support federated eQTL analysis workflows with th
 - **FHIR**, Fast Healthcare Interoperability Resources
 - **FTP**, file transfer protocol
 - **GEO**, Gene Expression Omnibus
+- **Globus**, open-source toolkit for grid computing
+- **GridFTP**, Extension of the File Transfer Protocol (FTP) for grid computing
 - **HES-SO**, Haute école spécialisée de Suisse occidentale
 - **HRC**, Human Random Control
 - **MD5**, Message-digest algorithm, a non-cryptographic hash function
 - **PRS**, Polygenic Risk Scores
 - **PsyCoLaus** psychiatric phenotypization
 - **QTL**, Quantitative trait locus
+- **RBAC**, Role-based access control
 - **RNA**, Ribonucleic acid
 - **SAM**, Sequence Alignment Map
 - **SIB**, Swiss Institute of Bioinformatics
