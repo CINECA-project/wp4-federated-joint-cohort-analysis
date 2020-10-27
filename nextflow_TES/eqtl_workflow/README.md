@@ -18,6 +18,7 @@ nextflow eqtl.nf \
 It should take up to 5–10 minutes to execute, and the results should appear as four `*.counts` files in the `result/` subdirectory.
 
 Successful execution should look something like this:
+
 ![TES execution success](images/tes_execution.png)
 
 To verify the output, we can check how many RNA-seq reads overlap the PFKL gene (ENSG00000141959) in the eipl_A sample.
