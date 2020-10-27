@@ -51,4 +51,4 @@ To verify the output, we can check how many RNA-seq reads overlap the same gene 
 9314
 ```
 
-We note that in both cases we detected the same number of reads, indicating that the workflow has executed successfully on both environments.
+We note that in both cases we detected the same number of reads (9314), indicating that the workflow has executed successfully on both environments.
