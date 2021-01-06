@@ -1,4 +1,6 @@
-# CINECA Cloud WP D4.2: Framework and APIs for executing federated genomics analyses
+# Framework and APIs for executing federated genomics analyses
+
+Note: the deliverable text has since been updated [in Google Docs](https://docs.google.com/document/d/1YJI3Ya5CV7g_V-Vm3xeCF0pJqpcm37zm_pCvoZydH_I).
 
 ## Table of Contents
 - [Scope](#scope)
@@ -88,4 +90,3 @@ This PoC is being developed to support federated eQTL analysis workflow with fol
 * Private analysis is executed on corresponding TES endpoints.
 * Results of analysis from different TES endpoints are then aggregated at specific TES endpoint or WES endpoint.
 * Final aggregated result is made available to end user.
-

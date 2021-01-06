@@ -13,7 +13,7 @@ Corresponds to:
 ## Develop specific federated analysis applications using the framework
 This umbrella goal corresponds to:
 * **Task 4.3** “Federated Genomic Analyses Algorithm Development”
-* **MS4.2** = *MS15* “Demo workflow running on multiple environments”, due in December 2020
+* **MS4.2** = **MS15** “Demo workflow running on multiple environments”, due in December 2020
 
 ### Federated joint cohort variant genotyping
 Corresponds to:
