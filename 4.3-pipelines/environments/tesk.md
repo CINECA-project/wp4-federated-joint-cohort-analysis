@@ -1,8 +1,8 @@
 # Running Nextflow workflows using TESK
 
 This document contains instructions on how to run federated analysis workflows. The protocol for running them is the same; the only difference is the actual Nextflow workflow file to be run, and its parameters. Currently, there are two workflows available:
-* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](hello_world.nf).
-* eQTL workflow in the [eqtl_workflow](demonstrators/4.3.3-eqtl) directory. See detailed instructions there.
+* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](../demonstrators/hello-world/hello_world.nf).
+* eQTL workflow in the [eqtl_workflow](../demonstrators/4.3.3-eqtl) directory. See detailed instructions there.
 
 ## Log in to Kubernetes cluster
 In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and executor nodes must share the same filesystem.
