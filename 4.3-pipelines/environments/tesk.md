@@ -1,8 +1,8 @@
 # Running Nextflow workflows using TESK
 
 This document contains instructions on how to run federated analysis workflows. The protocol for running them is the same; the only difference is the actual Nextflow workflow file to be run, and its parameters. Currently, there are two workflows available:
-* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](hello_world.nf).
-* eQTL workflow in the [eqtl_workflow](eqtl_workflow) directory. See detailed instructions there.
+* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](../demonstrators/hello-world/hello_world.nf).
+* eQTL workflow in the [eqtl_workflow](../demonstrators/4.3.3-eqtl) directory. See detailed instructions there.
 
 ## Log in to Kubernetes cluster
 In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and executor nodes must share the same filesystem.
@@ -45,8 +45,6 @@ nextflow run hello_world.nf -with-docker centos
 
 See subdirectories for specific pipeline for instructions on how to run them.
 
-# Additional notes and considerations
-
 ## Considerations & known limitations of running Nextflow workflows with TES
 * It is important not to use a trailing slash when specifying the endpoint.
 * It is mandatory to specify a Docker image to run.
@@ -54,42 +52,3 @@ See subdirectories for specific pipeline for instructions on how to run them.
 
 ## Note on file transfer
 To transfer files to and from a pod, use `./oc rsync /home/user/dir ${NEXTFLOW_POD}:/tmp`. Note that the second parameter is the _parent_ directory for the sync, so that this example command will create `/tmp/dir` and put contents of `/home/user/dir` in there.
-
-## Building Nextflow from source
-Before building, install and select Java 8 as the default. In Ubuntu this can be done by running the commands:
-```
-sudo apt install openjdk-8-jdk
-sudo update-alternatives --config java
-# Then select Java 8 as the default
-```
-
-Build from source (make sure to substitute the correct fork and branch names):
-```bash
-git clone https://github.com/tskir/nextflow
-cd nextflow
-git checkout master
-make packGA4GH
-cd ..
-```
-
-Note that the default `make pack` will produce a binary which does **not** include GA4GH support, so you have to run `make packGA4GH` instead. This command is introduced in a PR https://github.com/nextflow-io/nextflow/pull/1666, and is yet to be merged.
-
-There are two ways to run this installation instead of system-wide Nextflow:
-* You can run `bash nextflow/launch.sh [flags]`, but it has do be done on the same machine where you compiled it, otherwise the different baked-in paths will not match.
-* You can transfer the self-contained binary generated in the `build/releases/` directory to the Kubernetes pod and run it there.
-
-Note that every time you swap Nextflow versions, you must wipe the `.nextflow` directory, otherwise you might end up still using the old version.
-
-# Running Nextflow workflows using SLURM 
-
-The same hello_world.nf workflow can also be executed using the SLURM resource manager installed at many compute clusters. For example, at the at [University of Tartu HPC](https://hpc.ut.ee/en/home/), we can use the following command:
-
-```bash
-nextflow hello_world.nf -with-singularity centos \
-        -process.executor slurm \
-        -process.queue main
-```
-
-Note that we had to replace `-with-docker` with `-with-singularity`, because Docker is not supported in that environment. We also had to specify the executor and the name of the queue. 
-
-
