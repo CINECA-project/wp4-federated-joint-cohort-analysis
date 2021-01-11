@@ -9,6 +9,7 @@ The general approach for each use case is to split the analysis pipeline into tw
 * Part B of the pipeline aggregates the summary level products into the final scientific product, which is made available to the end user.
 
 This can be demonstrated with the following figure:
+
 ![Federated framework summary](docs/federated-framework-summary.svg)
 
 Part A and Part B of the pipelines have to be workflows written in [Nextflow](https://www.nextflow.io/).
