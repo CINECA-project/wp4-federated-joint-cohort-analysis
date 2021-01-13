@@ -22,7 +22,7 @@ Instructions below have been tested for CSC Rahti cloud running on RedHat OpenSh
 
         wget -qO- ${OC_RELEASE_URL} \
         | tar --extract --gzip --wildcards --strip-components 1 --file=/dev/stdin '*/oc'
-1. In your browser, go to `https://${CLOUD_BASE_URL}/console/command-line`. Copy and execute the `./oc login ...` command.
+1. In your browser, go to `https://${CLOUD_BASE_URL}/console/command-line` (make sure to explicitly use https, as the automatic redirect won't happen otherwise). Copy and execute the `./oc login ...` command.
 1. Switch to the necessary namespace: `./oc project ${CLOUD_NAMESPACE}`.
 1. List all pods using the command: `./oc get pods`. Find pod which name starts with `nextflow-dockerhub`. Put it into `NEXTFLOW_POD` variable.
 1. RSH to the required pod: `./oc rsh ${NEXTFLOW_POD}`
