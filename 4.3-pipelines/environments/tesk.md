@@ -49,7 +49,6 @@ See subdirectories for specific pipeline for instructions on how to run them.
 ## Considerations & known limitations of running Nextflow workflows with TES
 * It is important not to use a trailing slash when specifying the endpoint.
 * It is mandatory to specify a Docker image to run.
-* Specifying memory requirements in Nextflow processes (e.g. `memory '100KB'`). If this is done, the task will hang seemingly forever and never complete. See https://github.com/CINECA-project/wp4-federated-joint-cohort-analysis/issues/14.
 
 The Nextflow pod should include some packages to make working with it easier. An example Dockerfile for building a Nextflow pod can be found here: https://github.com/lvarin/nextflow-tes-okd/blob/master/Dockerfile.
 
