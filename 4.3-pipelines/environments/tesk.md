@@ -51,5 +51,6 @@ See subdirectories for specific pipeline for instructions on how to run them.
 * It is mandatory to specify a Docker image to run.
 * Specifying memory requirements in Nextflow processes (e.g. `memory '100KB'`). If this is done, the task will hang seemingly forever and never complete. See https://github.com/CINECA-project/wp4-federated-joint-cohort-analysis/issues/14.
 
-## Note on file transfer
+The Nextflow pod should include some packages to make working with it easier. An example Dockerfile for building a Nextflow pod can be found here: https://github.com/lvarin/nextflow-tes-okd/blob/master/Dockerfile.
+
 To transfer files to and from a pod, use `./oc rsync /home/user/dir ${NEXTFLOW_POD}:/tmp`. Note that the second parameter is the _parent_ directory for the sync, so that this example command will create `/tmp/dir` and put contents of `/home/user/dir` in there.
