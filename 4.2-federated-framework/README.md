@@ -1,7 +1,5 @@
 # Framework and APIs for executing federated genomics analyses
 
-Note: the deliverable text has since been updated [in Google Docs](https://docs.google.com/document/d/1YJI3Ya5CV7g_V-Vm3xeCF0pJqpcm37zm_pCvoZydH_I).
-
 ## Table of Contents
 
 - [Scope](#scope)
