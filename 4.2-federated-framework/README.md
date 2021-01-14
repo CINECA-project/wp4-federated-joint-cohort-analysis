@@ -64,7 +64,7 @@ These 4 API standards are inspired by large-scale distributed compute projects a
 
 ## Deployment Scenarios
 
-8The following 3 deployment scenarios were discussed for Federated Genomics analysis cloud APIs.
+The following 3 deployment scenarios were discussed for Federated Genomics analysis cloud APIs.
 
 ### Deployment Scenario 1: Federated Genomics analysis using GA4GH compatible ELIXIR Cloud APIs
 
