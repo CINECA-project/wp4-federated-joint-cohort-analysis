@@ -15,7 +15,7 @@
 The main scope of this deliverable is to gather technical requirements and frameworks for a federated analysis platform. In the work package subtask number 4.3.2, the project partners have described mainly the following use cases:
 
 - A federated QTL analysis for molecular phenotypes.
-- A simple Workflow for Polygenic Risk Scores (PRS) across two similar ethnic background sample sets.
+- A simple workflow for Polygenic Risk Scores (PRS) across two similar ethnic background sample sets.
 - A federated joint cohort genotyping.
 
 The federated analysis platform defined by this task aims to provide technological solutions for these use cases. For doing so, technical requirements are gathered based on these use case descriptions. The aim of this deliverable is to write a short design document that shows the requirements, and lists the different options for a solution.
