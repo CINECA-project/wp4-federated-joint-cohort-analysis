@@ -81,7 +81,7 @@ Deployment of APIs in this scenario have following dependecies:
 
 ### Deployment Scenario 2: Federated Genomic Analysis using Nextflow & GA4GH Compatible Services (WES & TES)
 
-Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (and Optionally a WES shim to make it fully compatible with GA4GH WES) which serve as a WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed the data is made available to the data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) and federated TES (TESK) endpoints are deployed in several CINECA WP4 wide partners.
+Under this deployment scenario, CINECA WP4 partners can deploy a [Nextflow](https://www.nextflow.io/) manager (and optionally a WES shim to make it fully compatible with GA4GH WES) which serve as a WES endpoint. Nextflow executor in this scenario is [TESK](https://github.com/EMBL-EBI-TSI/TESK) which act as a TES endpoint. For data access, it is assumed the data is made available to the data staging area within the cluster. Figure 4, depicts this deployment model where a centralized WES (Nextflow manager) and federated TES (TESK) endpoints are deployed in several CINECA WP4 wide partners.
 
 #### Figure 4: Deployment Scenario 2
 
