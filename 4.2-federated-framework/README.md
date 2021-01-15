@@ -134,7 +134,7 @@ This PoC is being developed to support federated eQTL analysis workflows with th
 
 ![dbGAP](./dbGAP.drawio.png)
 
-**Prerequisites**: THe SRA toolkit should be installed in the Data Staging Area, the User must have access to the access controlled data and have access to its dbGAP repository key in the Data staging area.
+**Prerequisites**: The SRA toolkit should be installed in the Data Staging Area, the User must have access to the access controlled data and have access to its dbGAP repository key in the Data staging area.
 
 1. Start the SRA toolkit and review its configuration. Import your dbGAP repository key in the SRA toolkit and authenticate the client with dbGAP.
 1. dbGAP authenticates the requested access.
