@@ -6,13 +6,32 @@ Step A (private step) reduces the individual level genotypes to dataset-specific
 
 Step B (meta-analysis step) then computes the final allele frequencies based on the results collected from step A.
 
-The instructions below demonstrate how the pipelie can be run on two separate datasets using two different execution environments.
+The instructions below demonstrate how the pipeline can be run on two separate datasets using three different execution environments.
 
-## Step A, dataset 1: GIAB
-...
+## Step A, dataset 1: GIAB, environment: TESK @ CSC Rahti cloud
 
-## Step A, dataset 2: EGA synthetic dataset
-...
+See the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
-## Step B, result integration
+```bash
+
+```
+
+## Step A, dataset 2: EGA synthetic dataset: LSF @ EMBL-EBI cluster
+
+See the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
+
+```bash
+
+```
+
+## Step B, result integration: locally
+
+See the [general instructions](/4.3-pipelines/environments/local.md) for setting up and using the local (Linux) environment.
+
+```bash
+
+```
+
+## Analysing the results
+
 ...
