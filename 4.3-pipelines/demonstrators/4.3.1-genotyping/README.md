@@ -6,27 +6,51 @@ Step A (private step) reduces the individual level genotypes to dataset-specific
 
 Step B (meta-analysis step) then computes the final allele frequencies based on the results collected from step A.
 
-The instructions below demonstrate how the pipeline can be run on two separate datasets using three different execution environments.
+The instructions below demonstrate how the pipeline can be run on two separate datasets with two different reference genomes using three different execution environments. The example input files are provided.
 
-## Step A, dataset 1: GIAB, environment: TESK @ CSC Rahti cloud
+## Step A1, raw data processing: GIAB
 
-See the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
+|Property|Value|
+|---|---|
+|Dataset|GIAB|
+|Access protocol|FTP|
+|Number of samples|7|
+|Data format|BAM|
+|Reference genome|GRCh38|
+|Processing environment|TESK @ CSC Rahti cloud|
+
+This example, [`input-1-giab.tsv`](input-1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
+
+See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
 
 ```
 
-## Step A, dataset 2: EGA synthetic dataset: LSF @ EMBL-EBI cluster
+## Step A2, raw data processing: EGA
 
-See the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
+|Property|Value|
+|---|---|
+|Dataset|EGA synthetic dataset|
+|Access protocol|htsget via EGA download client|
+|Number of samples|6|
+|Data format|BAM|
+|Reference genome|GRCh37|
+|Processing environment|LSF @ EMBL-EBI cluster|
+
+The example, [`input-2-ega.tsv`](input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338.
+
+See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
 
 ```
 
-## Step B, result integration: locally
+## Step B, result integration
 
-See the [general instructions](/4.3-pipelines/environments/local.md) for setting up and using the local (Linux) environment.
+Procesing environment: **local (Linux machine).**
+
+See also the [general instructions](/4.3-pipelines/environments/local.md) for setting up and using the local (Linux) environment.
 
 ```bash
 
