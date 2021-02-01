@@ -5,16 +5,14 @@ input_data_ch = Channel.fromPath(params.inputData)
     .splitCsv(header: true, sep: "\t", strip: true)
     .map { row -> [row.sample_id, row.fetch_mode, row.path] }
 
-reference_genome_link = Channel.from(args.referenceGenomeLink)
-
 
 process fetchReferenceGenome {
 
-    publishDir "results/", mode: "copy"
+    publishDir params.resultsDir, mode: "copy"
     output: path "reference.fa" into reference_genome_fa
 
     """
-    wget -qO- ${reference_genome_link} | gzip -cd > reference.fa
+    wget -qO- ${params.referenceGenomeLink} | gzip -cd > reference.fa
     """
 
 }
@@ -22,7 +20,7 @@ process fetchReferenceGenome {
 
 process fetchInputData {
 
-    publishDir "results/", mode: "copy"
+    publishDir params.resultsDir, mode: "copy"
 
     // samtools library cannot handle network errors, so we need to retry explicitly in case they happen.
     errorStrategy "retry"
@@ -43,7 +41,7 @@ process fetchInputData {
 
         else if ( fetch_mode == "FTP" )
             """
-            samtools view -b "${path}" chr22:20014945-20069053 > "${sample_id}.bam"
+            samtools view -b "${path}" chr17:63477061-63498373 > "${sample_id}.bam"
             """
 
         else
@@ -54,11 +52,18 @@ process fetchInputData {
 
 process callVariants {
 
-    input: set sample_id, file("${sample_id}.bam") from reads_bam
-    output: set sample_id, file("{sample_id}.vcf") into calls_vcf
+    publishDir params.resultsDir, mode: "copy"
+
+    input:
+        set sample_id, file("${sample_id}.bam") from reads_bam
+        file("reference.fa") from reference_genome_fa
+    output:
+        set sample_id, file("${sample_id}.vcf") into calls_vcf
 
     """
-    echo bcftools mpileup
+    bcftools mpileup -Ou -f "reference.fa" "${sample_id}.bam" \
+        | bcftools call -m -Ou \
+        | bcftools view -i "%QUAL > 30" -Ov -o "${sample_id}.vcf"
     """
 
 }

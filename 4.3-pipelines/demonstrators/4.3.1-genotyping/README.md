@@ -28,9 +28,10 @@ This example, [`input-1-giab.tsv`](input-1-giab.tsv), uses FTP links to GRCh38 a
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
-./nextflow stepA-calculate-frequency.nf \
+time ./nextflow stepA-calculate-frequency.nf \
   --inputData input-1-giab.tsv \
-  --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/chr17.fa.gz'
+  --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
+  --resultsDir results_giab
 ```
 
 ## Step A2, raw data processing: EGA
@@ -49,7 +50,10 @@ The example, [`input-2-ega.tsv`](input-2-ega.tsv), was constructed using 6 BAM f
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-
+time ./nextflow stepB-calculate-frequency.nf \
+  --inputData input-2-ega.tsv \
+  --referenceGenomeLink 'https://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/chr17.fa.gz' \
+  --resultsDir results_ega
 ```
 
 ## Step B, result integration
