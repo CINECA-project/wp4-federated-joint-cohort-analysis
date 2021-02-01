@@ -8,6 +8,10 @@ Step B (meta-analysis step) then computes the final allele frequencies based on 
 
 The instructions below demonstrate how the pipeline can be run on two separate datasets with two different reference genomes using three different execution environments. The example input files are provided.
 
+The test region used for the demonstrator is the ACE gene with the coordinates:
+* GRCh37: chr17:61554422-61575741
+* GRCh38: chr17:63477061-63498373
+
 ## Step A1, raw data processing: GIAB
 
 |Property|Value|
@@ -24,7 +28,9 @@ This example, [`input-1-giab.tsv`](input-1-giab.tsv), uses FTP links to GRCh38 a
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
-
+./nextflow stepA-calculate-frequency.nf \
+  --inputData input-1-giab.tsv \
+  --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/chr17.fa.gz'
 ```
 
 ## Step A2, raw data processing: EGA
@@ -38,7 +44,7 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 |Reference genome|GRCh37|
 |Processing environment|LSF @ EMBL-EBI cluster|
 
-The example, [`input-2-ega.tsv`](input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338.
+The example, [`input-2-ega.tsv`](input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
 
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
