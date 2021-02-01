@@ -31,7 +31,8 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 time ./nextflow stepA-calculate-frequency.nf \
   --inputData input-1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
-  --resultsDir results_giab
+  --debugDir debug_giab \
+  --outputVcf result_giab.vcf.gz
 ```
 
 ## Step A2, raw data processing: EGA
