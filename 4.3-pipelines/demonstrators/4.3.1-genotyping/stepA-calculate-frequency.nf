@@ -58,12 +58,14 @@ process callVariants {
         set sample_id, file("${sample_id}.bam") from reads_bam
         file("reference.fa") from reference_genome_fa
     output:
-        set sample_id, file("${sample_id}.vcf") into calls_vcf
+        set sample_id, file("${sample_id}.vcf.gz"), file("${sample_id}.vcf.gz.tbi") into calls_vcf
 
     """
     bcftools mpileup -Ou -f "reference.fa" "${sample_id}.bam" \
         | bcftools call -m -Ou \
         | bcftools view -i "%QUAL > 30" -Ov -o "${sample_id}.vcf"
+    bgzip "${sample_id}.vcf"
+    tabix "${sample_id}.vcf.gz"
     """
 
 }
