@@ -90,9 +90,7 @@ process mergeVcf {
         file("${final_vcf_name}")
 
     """
-    bcftools merge -Ou ${vcf_files} | bcftools view -Ov -i 'INFO/AC>0' -s '' --force-samples > "result.vcf"
-    bgzip "result.vcf"
-    mv "result.vcf.gz" "${final_vcf_name}"
+    bcftools merge -Ou ${vcf_files} | bcftools view -Oz -i 'INFO/AC>0' -s '' --force-samples > "${final_vcf_name}"
     """
 
 }

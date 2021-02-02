@@ -67,9 +67,10 @@ See also the [general instructions](/4.3-pipelines/environments/local.md) for se
 After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location.
 
 ```bash
-
+time ./nextflow stepB-integrate-results.nf \
+  --inputData input-B.tsv \
+  --debugDir debug_integrate \
+  --outputVcf result-B.vcf.gz
 ```
 
-## Analysing the results
-
-...
+The resulting file, `result-B.vcf.gz`, contains the joint `AN` and `AC` counts from two datasets, and a joint `AF` calculated from them.

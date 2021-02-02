@@ -1,0 +1,3 @@
+dataset_id	input_vcf	chr_name_mapping	liftover_required
+giab	result-A1-giab.vcf.gz	-	False
+ega	result-A2-ega.vcf.gz	chr-mapping.tsv	True
