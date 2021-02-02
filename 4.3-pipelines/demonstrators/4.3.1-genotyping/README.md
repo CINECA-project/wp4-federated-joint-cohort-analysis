@@ -29,10 +29,10 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 
 ```bash
 time ./nextflow stepA-calculate-frequency.nf \
-  --inputData input-1-giab.tsv \
+  --inputData input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --debugDir debug_giab \
-  --outputVcf result_giab.vcf.gz
+  --outputVcf result-A1-giab.vcf.gz
 ```
 
 ## Step A2, raw data processing: EGA
@@ -51,10 +51,11 @@ The example, [`input-2-ega.tsv`](input-2-ega.tsv), was constructed using 6 BAM f
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-time ./nextflow stepB-calculate-frequency.nf \
-  --inputData input-2-ega.tsv \
-  --referenceGenomeLink 'https://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/chr17.fa.gz' \
-  --resultsDir results_ega
+time ./nextflow stepA-calculate-frequency.nf \
+  --inputData input-A2-ega.tsv \
+  --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
+  --debugDir debug_ega \
+  --outputVcf result-A2-ega.vcf.gz
 ```
 
 ## Step B, result integration
@@ -62,6 +63,8 @@ time ./nextflow stepB-calculate-frequency.nf \
 Procesing environment: **local (Linux machine).**
 
 See also the [general instructions](/4.3-pipelines/environments/local.md) for setting up and using the local (Linux) environment.
+
+After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location.
 
 ```bash
 
