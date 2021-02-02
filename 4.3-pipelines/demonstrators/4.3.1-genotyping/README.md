@@ -69,6 +69,7 @@ After steps A1 and A2 have been run, collect the result files (`result-A1-giab.v
 ```bash
 time ./nextflow stepB-integrate-results.nf \
   --inputData input-B.tsv \
+  --targetReferenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --debugDir debug_integrate \
   --outputVcf result-B.vcf.gz
 ```

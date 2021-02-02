@@ -1,3 +1,3 @@
-dataset_id	input_vcf	chr_name_mapping	liftover_required
-giab	result-A1-giab.vcf.gz	-	False
-ega	result-A2-ega.vcf.gz	chr-mapping.tsv	True
+dataset_id	input_vcf	chr_name_mapping	liftover_chain
+giab	result-A1-giab.vcf.gz	-	-
+ega	result-A2-ega.vcf.gz	chr-mapping.tsv	http://hgdownload.cse.ucsc.edu/goldenpath/hg19/liftOver/hg19ToHg38.over.chain.gz

@@ -11,6 +11,8 @@ final_vcf_dir = file(params.outputVcf).getParent()
 
 process fetchReferenceGenome {
 
+    errorStrategy "retry"
+    maxRetries 3
     publishDir params.debugDir
 
     output:
