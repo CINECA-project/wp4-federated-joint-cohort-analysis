@@ -12,6 +12,22 @@ The test region used for the demonstrator is the ACE gene with the coordinates:
 * GRCh37: chr17:61554422-61575741
 * GRCh38: chr17:63477061-63498373
 
+## Local dependency installation
+
+TODO: Dockerise this section (required further discussion within WP4).
+
+```bash
+# Nextflow
+wget -qO- https://get.nextflow.io | bash
+# Latest bcftools version (required for certain functionality)
+git clone --branch develop git://github.com/samtools/htslib.git
+git clone --branch develop git://github.com/samtools/bcftools.git
+cd bcftools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
+export PATH=$PATH:bcftools/
+# Picard tools
+wget -q https://github.com/broadinstitute/picard/releases/download/2.24.2/picard.jar
+```
+
 ## Step A1, raw data processing: GIAB
 
 |Property|Value|
