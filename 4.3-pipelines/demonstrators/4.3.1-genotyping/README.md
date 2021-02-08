@@ -41,7 +41,7 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 
 ```bash
 ./bin/nextflow stepA-calculate-frequency.nf \
-  --inputData inputs/input-A1-giab.tsv \
+  --inputData input-A/input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --binDir `realpath bin` \
   --debugDir debug_giab \
@@ -65,7 +65,7 @@ See also the [general instructions](/4.3-pipelines/environments/lsf.md) for sett
 
 ```bash
 ./bin/nextflow stepA-calculate-frequency.nf \
-  --inputData inputs/input-A2-ega.tsv \
+  --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
   --binDir `realpath bin` \
   --debugDir debug_ega \
@@ -76,11 +76,11 @@ See also the [general instructions](/4.3-pipelines/environments/lsf.md) for sett
 
 Procesing environment: **local (Linux machine).**
 
-After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location.
+After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location (`input-B` directory in this example).
 
 ```bash
 ./bin/nextflow stepB-integrate-results.nf \
-  --inputData inputs/input-B.tsv \
+  --inputData input-B/input-B.tsv \
   --targetReferenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --binDir `realpath bin` \
   --debugDir debug_integrate \
