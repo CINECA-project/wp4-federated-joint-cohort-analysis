@@ -8,8 +8,6 @@ The instructions below demonstrate how the pipeline can be run on two separate d
 
 ## Local dependency installation
 
-TODO: Dockerise this section (this decision required further discussion within WP4).
-
 ```bash
 mkdir bin && cd bin
 # Nextflow
@@ -37,7 +35,7 @@ cd ..
 |Reference genome|GRCh38|
 |Processing environment|TESK @ CSC Rahti cloud|
 
-This example, [`inputs/input-1-giab.tsv`](inputs/input-1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
+This example, [`inputs/input-A1-giab.tsv`](inputs/input-1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
 
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
@@ -61,7 +59,7 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 |Reference genome|GRCh37|
 |Processing environment|LSF @ EMBL-EBI cluster|
 
-The example, [`inputs/input-2-ega.tsv`](inputs/input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
+The example, [`inputs/input-A2-ega.tsv`](inputs/input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
 
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
@@ -77,8 +75,6 @@ See also the [general instructions](/4.3-pipelines/environments/lsf.md) for sett
 ## Step B, result integration
 
 Procesing environment: **local (Linux machine).**
-
-See also the [general instructions](/4.3-pipelines/environments/local.md) for setting up and using the local (Linux) environment.
 
 After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location.
 

@@ -1,1 +1,0 @@
-This is a placeholder document for running the pipelines locally, on a Linux machine.
