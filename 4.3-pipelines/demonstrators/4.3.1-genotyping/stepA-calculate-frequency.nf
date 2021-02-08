@@ -7,6 +7,7 @@ input_data_ch = Channel.fromPath(params.inputData)
 
 final_vcf_name = file(params.outputVcf).getName()
 final_vcf_dir = file(params.outputVcf).getParent()
+bin_dir = file(params.binDir)
 
 
 process fetchReferenceGenome {
@@ -39,17 +40,17 @@ process fetchInputData {
 
     script:
 
-        // In this case, --max-retries 0 is because the network error retries are already handled by Nextflow.
         if( fetch_mode == "EGA" )
             """
             pyega3 -d -t fetch "${path}" \
+                --max-retries 3 --retry-wait 10 \
                 -r 17 -s 61554422 -e 61575741 \
-                --max-retries 0 --format BAM --saveto "${sample_id}.bam"
+                --format BAM --saveto "${sample_id}.bam"
             """
 
         else if ( fetch_mode == "FTP" )
             """
-            samtools view -b "${path}" chr17:63477061-63498373 > "${sample_id}.bam"
+            ${bin_dir}/samtools/samtools view -b "${path}" chr17:63477061-63498373 > "${sample_id}.bam"
             """
 
         else

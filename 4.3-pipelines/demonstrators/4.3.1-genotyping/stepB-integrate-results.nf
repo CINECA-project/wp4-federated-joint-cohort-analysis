@@ -8,6 +8,7 @@ input_data_ch = Channel.fromPath(params.inputData)
 input_dir = file(params.inputData).getParent()
 final_vcf_name = file(params.outputVcf).getName()
 final_vcf_dir = file(params.outputVcf).getParent()
+bin_dir = file(params.binDir)
 
 
 process fetchTargetReferenceGenome {
@@ -72,12 +73,12 @@ process variantLiftover {
         else
             """
             # Create sequence dictionary
-            java -Xmx2g -jar ${input_dir}/picard.jar CreateSequenceDictionary \
+            java -Xmx2g -jar ${bin_dir}/picard.jar CreateSequenceDictionary \
                 -R "reference.fa" \
                 -O "reference.dict"
 
             # Lift over
-            java -Xmx2g -jar ${input_dir}/picard.jar LiftoverVcf \
+            java -Xmx2g -jar ${bin_dir}/picard.jar LiftoverVcf \
                 -I ${renamed_vcf} \
                 -O "${dataset_id}.2-remapped.vcf.gz" \
                 -CHAIN <(wget -qO- ${liftover_chain} | gzip -cd) \
@@ -99,8 +100,8 @@ process renameAnnotations {
         set dataset_id, file("${dataset_id}.3-annotations.vcf.gz") into annotations_data_ch
 
     """
-    bcftools annotate \
-        --rename-annots <(echo -e 'INFO/AN\tINFO/AN_\nINFO/AC\tINFO/AC_') \
+    ${bin_dir}/bcftools/bcftools annotate \
+        --rename-annots <(echo -e 'INFO/AN\tAN_\nINFO/AC\tAC_') \
         -Oz -o "${dataset_id}.3-annotations.vcf.gz" \
         "${dataset_id}.2-remapped.vcf.gz"
     """
@@ -137,8 +138,9 @@ process mergeVcf {
         file("${final_vcf_name}")
 
     """
-    bcftools merge -Ou ${vcf_files} \
-        | bcftools annotate --rename-annots <(echo -e 'INFO/AN_\tINFO/AN\nINFO/AC_\tINFO/AC') -Oz > "${final_vcf_name}"
+    bcftools merge -Ou ${vcf_files} --info-rules 'AN_:sum,AC_:sum' \
+        | ${bin_dir}/bcftools/bcftools annotate \
+              --rename-annots <(echo -e 'INFO/AN_\tAN\nINFO/AC_\tAC') -Oz -o "${final_vcf_name}"
     """
 
 }
