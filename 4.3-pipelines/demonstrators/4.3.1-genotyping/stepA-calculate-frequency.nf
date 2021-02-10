@@ -74,7 +74,7 @@ process callVariants {
         | bcftools call -m -Ou \
         | bcftools view -i "%QUAL > 30" -Ov -o "${sample_id}.vcf"
     bgzip "${sample_id}.vcf"
-    tabix "${sample_id}.vcf.gz"
+    tabix -p vcf "${sample_id}.vcf.gz"
     """
 
 }

@@ -41,7 +41,7 @@ process renameChromosomes {
 
         if ( chr_name_mapping == "-" )
             """
-            cp ${input_dir}/${input_vcf} "${dataset_id}.1-renamed.vcf.gz"
+            ln -s ${input_dir}/${input_vcf} "${dataset_id}.1-renamed.vcf.gz"
             """
 
         else
@@ -68,7 +68,7 @@ process variantLiftover {
 
         if ( liftover_chain == "-" )
             """
-            cp ${renamed_vcf} "${dataset_id}.2-remapped.vcf.gz"
+            ln -s ${renamed_vcf} "${dataset_id}.2-remapped.vcf.gz"
             """
 
         else
@@ -121,7 +121,7 @@ process indexVcf {
         file("${dataset_id}.3-annotations.vcf.gz.tbi") into ready_vcf_index_ch
 
     """
-    tabix "${dataset_id}.3-annotations.vcf.gz"
+    tabix -p vcf "${dataset_id}.3-annotations.vcf.gz"
     """
 
 }

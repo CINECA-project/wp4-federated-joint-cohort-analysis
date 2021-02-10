@@ -12,7 +12,7 @@ The pipeline dependencies are contained in a [`Dockerfile`](Dockerfile), availab
 
 For simplicity, the commands below always display Nextflow being invoked simply as `nextflow`; however, the syntax slightly varies between environments (only the base, not the arguments). Please see the separate documentation for each environment on how to run it.
 
-## Step A1, raw data processing: GIAB
+## Step A1, individual level data processing: GIAB
 
 |Property|Value|
 |---|---|
@@ -36,7 +36,7 @@ nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
   --outputVcf result-A1-giab.vcf.gz
 ```
 
-## Step A2, raw data processing: EGA
+## Step A2, individual level data processing: EGA
 
 |Property|Value|
 |---|---|
