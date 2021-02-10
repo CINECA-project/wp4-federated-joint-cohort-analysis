@@ -7,7 +7,6 @@ input_data_ch = Channel.fromPath(params.inputData)
 
 final_vcf_name = file(params.outputVcf).getName()
 final_vcf_dir = file(params.outputVcf).getParent()
-bin_dir = file(params.binDir)
 
 
 process fetchReferenceGenome {
@@ -30,7 +29,7 @@ process fetchInputData {
 
     // samtools library cannot handle network errors, so we need to retry explicitly in case they happen.
     errorStrategy "retry"
-    maxRetries 5
+    maxRetries 100
     publishDir params.debugDir
 
     input:
@@ -43,7 +42,7 @@ process fetchInputData {
         if( fetch_mode == "EGA" )
             """
             pyega3 -d -t fetch "${path}" \
-                --max-retries 3 --retry-wait 10 \
+                --max-retries 0 \
                 -r 17 -s 61554422 -e 61575741 \
                 --format BAM --saveto "${sample_id}.bam"
             """

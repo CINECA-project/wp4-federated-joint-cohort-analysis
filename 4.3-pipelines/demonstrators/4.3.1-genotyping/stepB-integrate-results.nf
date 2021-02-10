@@ -8,7 +8,6 @@ input_data_ch = Channel.fromPath(params.inputData)
 input_dir = file(params.inputData).getParent()
 final_vcf_name = file(params.outputVcf).getName()
 final_vcf_dir = file(params.outputVcf).getParent()
-bin_dir = file(params.binDir)
 
 
 process fetchTargetReferenceGenome {

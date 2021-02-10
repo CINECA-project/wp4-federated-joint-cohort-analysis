@@ -8,7 +8,9 @@ The instructions below demonstrate how the pipeline can be run on two separate d
 
 ## Dependency installation
 
-The pipeline dependencies are contained in a [`Dockerfile`](Dockerfile), available as a `tskir/cineca-wp4-genotyping` image. Nextflow can be installed locally using the command: `wget -qO- https://get.nextflow.io | bash`.
+The pipeline dependencies are contained in a [`Dockerfile`](Dockerfile), available as a `tskir/cineca-wp4-genotyping` image.
+
+For simplicity, the commands below always display Nextflow being invoked simply as `nextflow`; however, the syntax slightly varies between environments (only the base, not the arguments). Please see the separate documentation for each environment on how to run it.
 
 ## Step A1, raw data processing: GIAB
 
@@ -26,7 +28,7 @@ This example, [`inputs/input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP 
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
-./nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.1.0 \
+nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.3.0 \
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
@@ -50,7 +52,7 @@ The example, [`inputs/input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was construc
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-./nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.1.0 \
+nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.3.0 \
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
@@ -65,7 +67,8 @@ Procesing environment: **local (Linux machine).**
 After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location (`input-B` directory in this example).
 
 ```bash
-./bin/nextflow stepB-integrate-results.nf \
+nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.3.0 \
+  stepB-integrate-results.nf \
   --inputData input-B/input-B.tsv \
   --targetReferenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --debugDir debug_integrate \
