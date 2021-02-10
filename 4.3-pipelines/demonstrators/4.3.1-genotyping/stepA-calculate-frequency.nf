@@ -50,7 +50,7 @@ process fetchInputData {
 
         else if ( fetch_mode == "FTP" )
             """
-            ${bin_dir}/samtools/samtools view -b "${path}" chr17:63477061-63498373 > "${sample_id}.bam"
+            ${bin_dir}/samtools view -b "${path}" chr17:63477061-63498373 > "${sample_id}.bam"
             """
 
         else
@@ -71,11 +71,11 @@ process callVariants {
         file("${sample_id}.vcf.gz.tbi") into indexes_tbi
 
     """
-    bcftools mpileup -Ou -f "reference.fa" "${sample_id}.bam" \
-        | bcftools call -m -Ou \
-        | bcftools view -i "%QUAL > 30" -Ov -o "${sample_id}.vcf"
-    bgzip "${sample_id}.vcf"
-    tabix "${sample_id}.vcf.gz"
+    ${bin_dir}/bcftools mpileup -Ou -f "reference.fa" "${sample_id}.bam" \
+        | ${bin_dir}/bcftools call -m -Ou \
+        | ${bin_dir}/bcftools view -i "%QUAL > 30" -Ov -o "${sample_id}.vcf"
+    ${bin_dir}/bgzip "${sample_id}.vcf"
+    ${bin_dir}/tabix "${sample_id}.vcf.gz"
     """
 
 }
@@ -93,7 +93,8 @@ process mergeVcf {
         file("${final_vcf_name}")
 
     """
-    bcftools merge -Ou ${vcf_files} | bcftools view -Oz -i 'INFO/AC>0' -s '' --force-samples > "${final_vcf_name}"
+    ${bin_dir}/bcftools merge -Ou ${vcf_files} \
+        | ${bin_dir}/bcftools view -Oz -i 'INFO/AC>0' -s '' --force-samples > "${final_vcf_name}"
     """
 
 }

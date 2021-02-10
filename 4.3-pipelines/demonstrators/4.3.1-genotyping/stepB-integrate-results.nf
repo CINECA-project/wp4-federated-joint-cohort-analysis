@@ -45,7 +45,7 @@ process renameChromosomes {
 
         else
             """
-            bcftools annotate -Oz --rename-chrs ${input_dir}/${chr_name_mapping} ${input_dir}/${input_vcf} \
+            ${bin_dir}/bcftools annotate -Oz --rename-chrs ${input_dir}/${chr_name_mapping} ${input_dir}/${input_vcf} \
                 > "${dataset_id}.1-renamed.vcf.gz"
             """
 
@@ -100,7 +100,7 @@ process renameAnnotations {
         set dataset_id, file("${dataset_id}.3-annotations.vcf.gz") into annotations_data_ch
 
     """
-    ${bin_dir}/bcftools/bcftools annotate \
+    ${bin_dir}/bcftools annotate \
         --rename-annots <(echo -e 'INFO/AN\tAN_\nINFO/AC\tAC_') \
         -Oz -o "${dataset_id}.3-annotations.vcf.gz" \
         "${dataset_id}.2-remapped.vcf.gz"
@@ -120,7 +120,7 @@ process indexVcf {
         file("${dataset_id}.3-annotations.vcf.gz.tbi") into ready_vcf_index_ch
 
     """
-    tabix "${dataset_id}.3-annotations.vcf.gz"
+    ${bin_dir}/tabix "${dataset_id}.3-annotations.vcf.gz"
     """
 
 }
@@ -138,8 +138,8 @@ process mergeVcf {
         file("${final_vcf_name}")
 
     """
-    bcftools merge -Ou ${vcf_files} --info-rules 'AN_:sum,AC_:sum' \
-        | ${bin_dir}/bcftools/bcftools annotate \
+    ${bin_dir}/bcftools merge -Ou ${vcf_files} --info-rules 'AN_:sum,AC_:sum' \
+        | ${bin_dir}/bcftools annotate \
               --rename-annots <(echo -e 'INFO/AN_\tAN\nINFO/AC_\tAC') -Oz -o "${final_vcf_name}"
     """
 
