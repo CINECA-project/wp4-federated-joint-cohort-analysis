@@ -5,7 +5,8 @@ input_data_ch = Channel.fromPath(params.inputData)
     .splitCsv(header: true, sep: "\t", strip: true)
     .map { row -> [row.dataset_id, row.input_vcf, row.chr_name_mapping, row.liftover_chain] }
 
-input_dir = file(params.inputData).getParent()
+// We need the .collect() because this has to be a value channel, reused by all input data sets
+input_dir_ch = Channel.fromPath(params.inputDir, type: 'dir').collect()
 final_vcf_name = file(params.outputVcf).getName()
 final_vcf_dir = file(params.outputVcf).getParent()
 
@@ -31,6 +32,7 @@ process renameChromosomes {
     publishDir params.debugDir
 
     input:
+        file input_dir from input_dir_ch
         set dataset_id, input_vcf, chr_name_mapping, liftover_chain from input_data_ch
     output:
         set dataset_id, file("${dataset_id}.1-renamed.vcf.gz"), liftover_chain into renamed_data_ch
