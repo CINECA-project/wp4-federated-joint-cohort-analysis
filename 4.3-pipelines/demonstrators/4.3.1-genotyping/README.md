@@ -8,21 +8,7 @@ The instructions below demonstrate how the pipeline can be run on two separate d
 
 ## Dependency installation
 
-```bash
-cd bin
-# Nextflow
-wget -qO- https://get.nextflow.io | bash
-# Latest bcftools version (required for certain functionality)
-# git clone --branch develop git://github.com/samtools/htslib.git
-# cd htslib && git submodule update --init --recursive && make -j `nproc` && cd ..
-# git clone --branch develop git://github.com/samtools/bcftools.git
-# cd bcftools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
-# git clone --branch develop git://github.com/samtools/samtools.git
-# cd samtools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
-# Picard tools
-wget -q https://github.com/broadinstitute/picard/releases/download/2.24.2/picard.jar
-cd ..
-```
+The pipeline dependencies are contained in a [`Dockerfile`](Dockerfile), available as a `tskir/cineca-wp4-genotyping` image. Nextflow can be installed locally using the command: `wget -qO- https://get.nextflow.io | bash`.
 
 ## Step A1, raw data processing: GIAB
 
@@ -40,7 +26,8 @@ This example, [`inputs/input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP 
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
-./bin/nextflow stepA-calculate-frequency.nf \
+./nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.1.0 \
+  stepA-calculate-frequency.nf \
   --inputData input-A/input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
   --binDir `realpath bin` \
@@ -64,7 +51,8 @@ The example, [`inputs/input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was construc
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-./bin/nextflow stepA-calculate-frequency.nf \
+./nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.1.0 \
+  stepA-calculate-frequency.nf \
   --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
   --binDir `realpath bin` \
