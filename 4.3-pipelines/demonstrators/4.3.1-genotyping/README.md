@@ -6,19 +6,19 @@ Step A (private step) reduces the individual level genotypes to dataset-specific
 
 The instructions below demonstrate how the pipeline can be run on two separate datasets with two different reference genomes using three different execution environments. The example input files are provided. The test region used for the demonstrator is the ACE gene with the coordinates chr17:61554422-61575741 in GRCh37 and chr17:63477061-63498373 in GRCh38.
 
-## Local dependency installation
+## Dependency installation
 
 ```bash
-mkdir bin && cd bin
+cd bin
 # Nextflow
 wget -qO- https://get.nextflow.io | bash
 # Latest bcftools version (required for certain functionality)
-git clone --branch develop git://github.com/samtools/htslib.git
-cd htslib && git submodule update --init --recursive && make -j `nproc` && cd ..
-git clone --branch develop git://github.com/samtools/bcftools.git
-cd bcftools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
-git clone --branch develop git://github.com/samtools/samtools.git
-cd samtools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
+# git clone --branch develop git://github.com/samtools/htslib.git
+# cd htslib && git submodule update --init --recursive && make -j `nproc` && cd ..
+# git clone --branch develop git://github.com/samtools/bcftools.git
+# cd bcftools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
+# git clone --branch develop git://github.com/samtools/samtools.git
+# cd samtools && autoheader && autoconf && ./configure && make -j `nproc` && cd ..
 # Picard tools
 wget -q https://github.com/broadinstitute/picard/releases/download/2.24.2/picard.jar
 cd ..
@@ -30,12 +30,12 @@ cd ..
 |---|---|
 |Dataset|GIAB|
 |Access protocol|FTP|
-|Number of samples|7|
+|Number of samples|7 (4 used)|
 |Data format|BAM|
 |Reference genome|GRCh38|
 |Processing environment|TESK @ CSC Rahti cloud|
 
-This example, [`inputs/input-A1-giab.tsv`](inputs/input-1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
+This example, [`inputs/input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
 
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
@@ -54,12 +54,12 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
 |---|---|
 |Dataset|EGA synthetic dataset|
 |Access protocol|htsget via EGA download client|
-|Number of samples|6|
+|Number of samples|6 (4 used)|
 |Data format|BAM|
 |Reference genome|GRCh37|
 |Processing environment|LSF @ EMBL-EBI cluster|
 
-The example, [`inputs/input-A2-ega.tsv`](inputs/input-2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
+The example, [`inputs/input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
 
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
