@@ -45,7 +45,7 @@ process renameChromosomes {
 
         else
             """
-            ${bin_dir}/bcftools annotate -Oz --rename-chrs ${input_dir}/${chr_name_mapping} ${input_dir}/${input_vcf} \
+            bcftools annotate -Oz --rename-chrs ${input_dir}/${chr_name_mapping} ${input_dir}/${input_vcf} \
                 > "${dataset_id}.1-renamed.vcf.gz"
             """
 
@@ -73,12 +73,12 @@ process variantLiftover {
         else
             """
             # Create sequence dictionary
-            java -Xmx2g -jar ${bin_dir}/picard.jar CreateSequenceDictionary \
+            java -Xmx2g -jar /picard.jar CreateSequenceDictionary \
                 -R "reference.fa" \
                 -O "reference.dict"
 
             # Lift over
-            java -Xmx2g -jar ${bin_dir}/picard.jar LiftoverVcf \
+            java -Xmx2g -jar /picard.jar LiftoverVcf \
                 -I ${renamed_vcf} \
                 -O "${dataset_id}.2-remapped.vcf.gz" \
                 -CHAIN <(wget -qO- ${liftover_chain} | gzip -cd) \
@@ -100,7 +100,7 @@ process renameAnnotations {
         set dataset_id, file("${dataset_id}.3-annotations.vcf.gz") into annotations_data_ch
 
     """
-    ${bin_dir}/bcftools annotate \
+    bcftools annotate \
         --rename-annots <(echo -e 'INFO/AN\tAN_\nINFO/AC\tAC_') \
         -Oz -o "${dataset_id}.3-annotations.vcf.gz" \
         "${dataset_id}.2-remapped.vcf.gz"
@@ -120,7 +120,7 @@ process indexVcf {
         file("${dataset_id}.3-annotations.vcf.gz.tbi") into ready_vcf_index_ch
 
     """
-    ${bin_dir}/tabix "${dataset_id}.3-annotations.vcf.gz"
+    tabix "${dataset_id}.3-annotations.vcf.gz"
     """
 
 }
@@ -138,8 +138,8 @@ process mergeVcf {
         file("${final_vcf_name}")
 
     """
-    ${bin_dir}/bcftools merge -Ou ${vcf_files} --info-rules 'AN_:sum,AC_:sum' \
-        | ${bin_dir}/bcftools annotate \
+    bcftools merge -Ou ${vcf_files} --info-rules 'AN_:sum,AC_:sum' \
+        | bcftools annotate \
               --rename-annots <(echo -e 'INFO/AN_\tAN\nINFO/AC_\tAC') -Oz -o "${final_vcf_name}"
     """
 

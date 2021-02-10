@@ -30,7 +30,6 @@ See also the [general instructions](/4.3-pipelines/environments/tesk.md) for set
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
-  --binDir `realpath bin` \
   --debugDir debug_giab \
   --outputVcf result-A1-giab.vcf.gz
 ```
@@ -55,7 +54,6 @@ See also the [general instructions](/4.3-pipelines/environments/lsf.md) for sett
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
-  --binDir `realpath bin` \
   --debugDir debug_ega \
   --outputVcf result-A2-ega.vcf.gz
 ```
@@ -70,7 +68,6 @@ After steps A1 and A2 have been run, collect the result files (`result-A1-giab.v
 ./bin/nextflow stepB-integrate-results.nf \
   --inputData input-B/input-B.tsv \
   --targetReferenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
-  --binDir `realpath bin` \
   --debugDir debug_integrate \
   --outputVcf result-B.vcf.gz
 ```
