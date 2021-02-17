@@ -1,19 +1,15 @@
-# Running Nextflow workflows using TESK
-
-This document contains instructions on how to run federated analysis workflows. The protocol for running them is the same; the only difference is the actual Nextflow workflow file to be run, and its parameters. Currently, there are two workflows available:
-* A simple “Hello world” to test your setup. This is available in file [`hello_world.nf`](../demonstrators/hello-world/hello_world.nf).
-* eQTL workflow in the [eqtl_workflow](../demonstrators/4.3.3-eqtl) directory. See detailed instructions there.
+# Running CINECA WP4 pipelines on TESK in CSC Rahti Cloud
 
 ## Log in to Kubernetes cluster
-In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and executor nodes must share the same filesystem.
+In order to be able to pass files to and from a pipeline, you need to start Nextflow jobs on TESK while logged in to same Kubernetes cluster where TESK will run the jobs. The login node and the executor nodes must share the same filesystem.
 
-Instructions below have been tested for CSC Rahti cloud running on RedHat OpenShift. Instructions will need to be amended for other cloud types.
+Instructions below have been tested for CSC Rahti cloud running on RedHat OpenShift. Instructions might need to be amended for other cloud types.
 
 1. Set up configuration variables
 
         # Cloud parameters
-        export CLOUD_BASE_URL=c03.k8s-popup.csc.fi:8443
-        export CLOUD_NAMESPACE=tesk-cineca
+        export CLOUD_BASE_URL=[REDACTED]
+        export CLOUD_NAMESPACE=[REDACTED]
 
         # OpenShift command line tools release
         export OC_RELEASE_URL=https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
@@ -34,21 +30,15 @@ Set the common environment variables:
 ```bash
 export NXF_MODE=ga4gh
 export NXF_EXECUTOR=tes
-export NXF_EXECUTOR_TES_ENDPOINT='https://tesk-cineca.c03.k8s-popup.csc.fi'
+export NXF_EXECUTOR_TES_ENDPOINT=[REDACTED]
 export NXF_DEBUG=3
 ```
 
-## Run the pipeline
-After the previous steps are done, you are ready to run the pipeline. The actual pipeline to be run and its parameters will vary depending on your use case. To run the simplest “hello world” pipeline:
-```bash
-nextflow run hello_world.nf -with-docker centos
-```
-
-See subdirectories for specific pipeline for instructions on how to run them.
+After the previous steps are done, you are ready to run the pipeline by invoking the `nextflow` command, supplying it with the workflow file and the parameters. Please see subdirectories for specific [pipelines](/4.3-pipelines/demonstrators) for instructions.
 
 ## Considerations & known limitations of running Nextflow workflows with TES
 * It is important not to use a trailing slash when specifying the endpoint.
-* It is mandatory to specify a Docker image to run.
+* It is mandatory to specify a Docker image to run using the `-with-docker` option. The documentation on each pipeline will specify which image to use.
 
 The Nextflow pod should include some packages to make working with it easier. An example Dockerfile for building a Nextflow pod can be found here: https://github.com/lvarin/nextflow-tes-okd/blob/master/Dockerfile.
 
