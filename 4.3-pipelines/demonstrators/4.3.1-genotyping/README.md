@@ -10,7 +10,7 @@ The instructions below demonstrate how the pipeline can be run on two separate d
 
 The pipeline dependencies are contained in a [`Dockerfile`](Dockerfile), available as a `tskir/cineca-wp4-genotyping` image.
 
-For simplicity, the commands below always display Nextflow being invoked simply as `nextflow`; however, the syntax slightly varies between environments (only the base, not the arguments). Please see the separate documentation for each environment on how to run it.
+For simplicity, the commands below always display Nextflow being invoked simply as `nextflow`; however, the syntax slightly varies between environments. Please see the separate documentation for each environment on how to run it.
 
 ## Step A1, individual level data processing: GIAB
 
