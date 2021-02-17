@@ -23,9 +23,9 @@ If the LSF cluster in question does not support Docker (as is the case with the 
 
 The first time the Docker image is pulled and converted into the Singularity format, it may take a long time, depending on cluster performance, image size, and other factors. It is hence recommended that you set the `$NXF_SINGULARITY_CACHEDIR` to a location where the images will be cached. This location must be on a shared filesystem within the cluster.
 
-**Important:** check if you have the `$SINGULARITY_CACHEDIR` variable already set up in your environment. If so, it is recommended that `$NXF_SINGULARITY_CACHEDIR` is set to the same location:
+**Important:** check if you have the `$SINGULARITY_CACHEDIR` variable already set up in your environment. If so, make sure that `$NXF_SINGULARITY_CACHEDIR` is set to the same location:
 ```bash
 export NXF_SINGULARITY_CACHEDIR=$SINGULARITY_CACHEDIR
 ```
 
-Otherwise it appears that Nextflow may get confused and in some cases will pull the image into one location but then try to load it from another. This appears to be a bug and will be reported.
+Otherwise Nextflow may get confused and in some cases will pull the image into one location but then try to load it from another. This appears to be a bug: https://github.com/nextflow-io/nextflow/issues/1659#issuecomment-780291808.
