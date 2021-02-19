@@ -52,7 +52,7 @@ The example, [`input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was constructed usi
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
+nextflow run -with-singularity tskir/cineca-wp4-genotyping:v0.4.0 \
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
