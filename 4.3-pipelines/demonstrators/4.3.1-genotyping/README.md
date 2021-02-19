@@ -23,7 +23,7 @@ For simplicity, the commands below always display Nextflow being invoked simply 
 |Reference genome|GRCh38|
 |Processing environment|TESK @ CSC Rahti cloud|
 
-This example, [`inputs/input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
+This example, [`input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP links to GRCh38 alignments of HG001...HG007 obtained from https://github.com/genome-in-a-bottle/giab_data_indexes.
 
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
@@ -47,7 +47,7 @@ nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
 |Reference genome|GRCh37|
 |Processing environment|LSF @ EMBL-EBI cluster|
 
-The example, [`inputs/input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
+The example, [`input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was constructed using 6 BAM files from the EGA test dataset EGAD00001003338. Details: https://github.com/EGA-archive/ega-download-client.
 
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
@@ -64,7 +64,7 @@ nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
 
 Procesing environment: **local (Linux machine).**
 
-After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location (`input-B` directory in this example).
+After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location (`input-B` directory in this example). The input file, [`input-B.tsv`](input-B/input-B.tsv), contains the two output files from the previous steps, as well as a definition of transformations (chromosome renaming and liftover) applicable to each file.
 
 ```bash
 nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
