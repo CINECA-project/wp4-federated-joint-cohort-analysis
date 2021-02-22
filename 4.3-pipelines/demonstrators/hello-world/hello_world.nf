@@ -5,7 +5,7 @@ process say_hello {
     // executor 'slurm'
     cpus 1
     time '1h'
-    // memory '100KB'
+    memory '100KB'
     // singularity.enabled true
     // singularity.autoMounts true
     // singularity.cacheDir "$baseDir/singularity_img/"
