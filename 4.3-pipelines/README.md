@@ -22,6 +22,10 @@ Thanks to Nextflow versatility, the pipelines designed in this way are able to s
 
 See also [additional technical considerations](docs/nextflow-technical-considerations.md) regarding Nextlow, specifically about how to build it from source if necessary.
 
+### Note on portability
+
+In the modern world, true portability is not feasible without including some sort of containerisation layer. The pipelines developed by CINECA WP4 use Docker images for supplying their dependencies. Hence, each environment attempting to run these pipelines will need to support either Docker or Singularity (to which Docker images can be transparently converted).
+
 ## Demonstrators
 Example implementations of the proposed approach include:
 * [4.3.1. Joint cohort genotyping](demonstrators/4.3.1-genotyping)

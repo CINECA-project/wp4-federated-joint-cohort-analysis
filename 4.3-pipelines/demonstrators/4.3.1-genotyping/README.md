@@ -28,7 +28,7 @@ This example, [`input-A1-giab.tsv`](input-A/input-A1-giab.tsv), uses FTP links t
 See also the [general instructions](/4.3-pipelines/environments/tesk.md) for setting up and using the TESK environment.
 
 ```bash
-nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
+nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.5.0 \
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A1-giab.tsv \
   --referenceGenomeLink 'http://hgdownload.cse.ucsc.edu/goldenpath/hg38/chromosomes/chr17.fa.gz' \
@@ -52,7 +52,7 @@ The example, [`input-A2-ega.tsv`](input-A/input-A2-ega.tsv), was constructed usi
 See also the [general instructions](/4.3-pipelines/environments/lsf.md) for setting up and using the LSF environment.
 
 ```bash
-nextflow run -with-singularity tskir/cineca-wp4-genotyping:v0.4.0 \
+nextflow run -with-singularity tskir/cineca-wp4-genotyping:v0.5.0 \
   stepA-calculate-frequency.nf \
   --inputData input-A/input-A2-ega.tsv \
   --referenceGenomeLink 'ftp://ftp.ensembl.org/pub/grch37/current/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.chromosome.17.fa.gz' \
@@ -67,7 +67,7 @@ Procesing environment: **local (Linux machine).**
 After steps A1 and A2 have been run, collect the result files (`result-A1-giab.vcf.gz` and `result-A2-ega.vcf.gz`) into the same location (`input-B` directory in this example). The input file, [`input-B.tsv`](input-B/input-B.tsv), contains the two output files from the previous steps, as well as a definition of transformations (chromosome renaming and liftover) applicable to each file.
 
 ```bash
-nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.4.0 \
+nextflow run -with-docker tskir/cineca-wp4-genotyping:v0.5.0 \
   stepB-integrate-results.nf \
   --inputData input-B/input-B.tsv \
   --inputDir `realpath input-B` \
