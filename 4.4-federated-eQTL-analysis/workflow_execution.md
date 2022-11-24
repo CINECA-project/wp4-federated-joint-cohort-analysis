@@ -10,7 +10,7 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 
 The [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute) workflow takes raw genotype data in plink format, lifts variant positions to the correct reference genome version with CrossMap, aligns the genotypes to the reference panel with Genotype Harmonizer,  performs QC filtering with bcftools, phases the genotypes with Eagle and finally imputes the genotypes with Minimac4. The workflow also correctly handles the genotypes on the X chromosome, performing imputation separately for the pseudoautosomal regions (PAR) and the non-PAR regions.
 
-![High_level_schema](workflow_execution_files/genimpute_metromap.png)
+![genimpute_level_schema](workflow_execution_files/genimpute_metromap.png)
 
 
 #### Dowload the workflow from GitHub
@@ -60,7 +60,11 @@ nextflow run main.nf \
 
 - Check the <output_prefix>.imiss file for samples with large proportion of missing genotypes (e.g. > 5%). These samples are likely to have poor genotyping quality and should probably the excluded from the analysis before continuing. Remove these inviduals from the original plink file and re-run the genimpute workflow.
 
-## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
+## Step 2: RNA-seq quantification with eQTL-Catalogue/rnaseq
+
+The [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq) workflow is inspired by the [nf-core/rnaseq](https://nf-co.re/rnaseq) workflow and performs adapter trimming (TrimGalore), alignment to the reference genome (HISAT2),  gene and exon-level read counting (featureCounts), read coverage visualisation (deepTools), genotype concordance checks (qtltools MBV), splice junction quantification (LeafCutter) and transcript expression quantification (Salmon, txrevise).
+
+![genimpute_level_schema](workflow_execution_files/rnaseq_metromap.png)
 
 #### Dowload the workflow from GitHub
 
