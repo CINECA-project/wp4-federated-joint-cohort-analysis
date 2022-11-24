@@ -183,6 +183,16 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/rnaseq_complete_refe
 tar -xzvf rnaseq_complete_reference_290322.tar.gz
 ```
 
+5. Reference population genotype dataset
+
+This dataset is used to project individuals in the VCF file to the 1000 Genomes reference populations:
+
+```bash
+wget https://zenodo.org/record/6935520/files/popassign_complete_reference_280722.tar.gz
+tar -xzvf popassign_complete_reference_280722.tar.gz
+```
+
+
 #### Output
  `--outdir`: Absolute path to qcnorm output folder containing normalised molecular trait matrices in a format suitable for the qtlmap workflow. Relative path will also work here, but makes it more difficult to run qltmap workflow in the next step.
 
