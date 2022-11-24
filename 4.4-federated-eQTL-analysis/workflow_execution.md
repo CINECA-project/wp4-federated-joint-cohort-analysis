@@ -64,7 +64,7 @@ nextflow run main.nf \
 
 The [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq) workflow is inspired by the [nf-core/rnaseq](https://nf-co.re/rnaseq) workflow and performs adapter trimming (TrimGalore), alignment to the reference genome (HISAT2),  gene and exon-level read counting (featureCounts), read coverage visualisation (deepTools), genotype concordance checks (qtltools MBV), splice junction quantification (LeafCutter) and transcript expression quantification (Salmon, txrevise).
 
-![genimpute_level_schema](workflow_execution_files/rnaseq_metromap.png)
+![rnaseq_workflow_schema](workflow_execution_files/rnaseq_metromap.png)
 
 #### Dowload the workflow from GitHub
 
@@ -148,7 +148,9 @@ nextflow run main.nf\
 Use the `-executor.queueSize` option to limit the number alignment jobs running in parallel to avoid too much load on the disks.
 
 
-## Step 3: Gene expression and genotype data normalisation and QC with [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
+## Step 3: Gene expression and genotype data normalisation and QC with eQTL-Catalogue/qcnorm
+
+The [eQTL-Catalogue/qcnorm workflow](https://github.com/eQTL-Catalogue/qcnorm) that takes raw results from the [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq) workflow and applies appropriate normalisation techniques for each quantification method. Gene and exon counts are quantile normalised using the cqn R package before inverse normal transformation is applied. In contrast, transcript and splice-junction quantification results are converted into proportional estimates before inverse normal transformation is applied. The workflow also produces a QC report in html format containing the PCA and MDS plots of the gene expression data, as well as concordance checks for biological sex and genotype data.
 
 #### Dowload the workflow from GitHub
 
@@ -245,7 +247,11 @@ nextflow run main.nf -profile tartu_hpc -resume\
  --outdir GEUVADIS_GBR20_qcnorm_ge
 ```
 
-## Step 4: QTL analysis and fine mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
+## Step 4: QTL analysis and fine mapping with eQTL-Catalogue/qtlmap
+
+The [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap) workflow takes normalised molecular trait matrix along with metadata from the [qcnorm](#step-3-gene-expression-and-genotype-data-normalisation-and-qc-with-eqtl-catalogueqcnorm) workflow and imputed genotypes from the [genimpute](#step-1-genotype-imputation-with-eqtl-cataloguegenimpute) workflow and uses the fastQTL tool to test for association between genetic variants located near each molecular trait (e.g. +/- 1Mb around the gene) and the normalised trait value. These associations are referred to cis quantitative trait loci (cis-QTLs). To account for unmeasured confounders and population structure, the workflow also calculates principal components of the trait and genotype matrices and includes those as covariates in the linear model. Finally, the workflow also performs statistical finemapping using the susieR software. The summary results created by the qtlmap workflow do not contain any individual-level data and follow the formatting conventions of the eQTL Catalogue, making it easy to integrate new datasets with the existing ones available from the eQTL Catalogue.
+
+![qtlmap_workflow_schema](workflow_execution_files/qtlmap_metromap.png)
 
 #### Dowload the workflow from GitHub
 
