@@ -6,7 +6,12 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 * [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
 * [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
-## Step 1: Genotype imputation with [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
+## Step 1: Genotype imputation with eQTL-Catalogue/genimpute
+
+The [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute) workflow takes raw genotype data in plink format, lifts variant positions to the correct reference genome version with CrossMap, aligns the genotypes to the reference panel with Genotype Harmonizer,  performs QC filtering with bcftools, phases the genotypes with Eagle and finally imputes the genotypes with Minimac4. The workflow also correctly handles the genotypes on the X chromosome, performing imputation separately for the pseudoautosomal regions (PAR) and the non-PAR regions.
+
+![High_level_schema](workflow_execution_files/genimpute_metromap.png)
+
 
 #### Dowload the workflow from GitHub
 
