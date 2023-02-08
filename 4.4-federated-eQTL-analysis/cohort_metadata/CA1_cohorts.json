@@ -1,0 +1,74 @@
+[
+   {
+      "cohortDesign" : {
+         "id" : "OMIABIS:000101",
+         "label" : "longitudinal study design"
+      },
+      "cohortSize" : 1079,
+      "cohortType" : "study-defined",
+      "collectionEvents" : [
+         {
+            "eventGenders" : {
+               "availability" : true,
+               "availabilityCount" : 1079,
+               "distribution" : {
+                  "genders" : {
+                     "female" : 626,
+                     "male" : 453
+                  }
+               }
+            },
+            "eventLocations" : {
+               "availability" : true,
+               "availabilityCount" : 1079,
+               "distribution" : {
+                  "locations" : {
+                     "Australia" : 1079
+                  }
+               }
+            },
+            "eventGenotypes" : {
+               "availability" : true,
+               "availabilityCount" : 1079
+            },
+            "eventGeneExpression" : {
+               "availability" : true,
+               "availabilityCount" : 982,
+               "distribution" : {
+                  "sample_origin" : {
+                     "CD4 T-cell" : 982
+                  }
+               }
+            }
+         }
+      ],
+      "id" : "CINECA_synthetic_cohort_CA1",
+      "inclusionCriteria" : {
+         "ageRange" : {
+            "end" : {
+               "iso8601duration" : "P65Y"
+            },
+            "start" : {
+               "iso8601duration" : "P18Y"
+            }
+         },
+         "genders" : [
+            {
+               "id" : "NCIT:C16576",
+               "label" : "female"
+            },
+            {
+               "id" : "NCIT:C20197",
+               "label" : "male"
+            }
+         ],
+         "locations" : [
+            {
+               "id" : "GAZ:00150372",
+               "label" : "Canada"
+            }
+         ]
+      },
+      "name" : "CINECA synthetic cohort CA1"
+   }
+]

@@ -1,0 +1,82 @@
+[
+   {
+      "cohortDesign" : {
+         "id" : "OMIABIS:000101",
+         "label" : "longitudinal study design"
+      },
+      "cohortSize" : 322,
+      "cohortType" : "study-defined",
+      "collectionEvents" : [
+         {
+            "eventGenders" : {
+               "availability" : true,
+               "availabilityCount" : 322,
+               "distribution" : {
+                  "genders" : {
+                     "female" : 184,
+                     "male" : 138
+                  }
+               }
+            },
+            "eventLocations" : {
+               "availability" : true,
+               "availabilityCount" : 322,
+               "distribution" : {
+                  "locations" : {
+                     "Belgium" : 322
+                  }
+               }
+            },
+            "eventGenotypes" : {
+               "availability" : true,
+               "availabilityCount" : 322
+            },
+            "eventGeneExpression" : {
+               "availability" : true,
+               "availabilityCount" : 322,
+               "distribution" : {
+                  "sample_origin" : {
+                     "CD4 T-cell" : 290,
+                     "CD8 T-cell" : 277,
+                     "B-cell" : 262,
+                     "monocyte": 286,
+                     "neutrophil": 280,
+                     "platelet" : 205,
+                     "ileum" : 180,
+                     "rectum" : 271,
+                     "transverse_colon" : 286
+                  }
+               }
+            }
+         }
+      ],
+      "id" : "CINECA_synthetic_cohort_H3Africa1",
+      "inclusionCriteria" : {
+         "ageRange" : {
+            "end" : {
+               "iso8601duration" : "P65Y"
+            },
+            "start" : {
+               "iso8601duration" : "P18Y"
+            }
+         },
+         "genders" : [
+            {
+               "id" : "NCIT:C16576",
+               "label" : "female"
+            },
+            {
+               "id" : "NCIT:C20197",
+               "label" : "male"
+            }
+         ],
+         "locations" : [
+            {
+               "id" : "GAZ:00150372",
+               "label" : "South Africa"
+            }
+         ]
+      },
+      "name" : "CINECA synthetic cohort H3Africa1"
+   }
+]
