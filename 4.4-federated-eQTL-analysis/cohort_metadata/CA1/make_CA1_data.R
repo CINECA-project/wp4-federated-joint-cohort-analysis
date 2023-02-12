@@ -2,8 +2,8 @@ library("readxl")
 library("dplyr")
 
 #Import OneK1K sample metadata
-sex_table = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/OneK1K_sex_table.tsv")
-sample_meta = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/OneK1K_CD4_Naive_sample_metadata.tsv") %>%
+sex_table = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/CA1/OneK1K_sex_table.tsv")
+sample_meta = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/CA1/OneK1K_CD4_Naive_sample_metadata.tsv") %>%
   dplyr::left_join(sex_table)
 
 #Make OneK1K biosamples table
