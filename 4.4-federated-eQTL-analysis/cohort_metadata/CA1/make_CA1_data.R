@@ -5,6 +5,7 @@ library("dplyr")
 sex_table = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/CA1/OneK1K_sex_table.tsv")
 sample_meta = readr::read_tsv("4.4-federated-eQTL-analysis/cohort_metadata/CA1/OneK1K_CD4_Naive_sample_metadata.tsv") %>%
   dplyr::left_join(sex_table)
+write.table(sample_meta, "~/Downloads/OneK1K_genotypes/OneK1K_CD4_Naive_sample_metadata.tsv", row.names = F, quote = F, sep = "\t")
 
 #Make OneK1K biosamples table
 biosamples = read_xlsx("4.4-federated-eQTL-analysis/cohort_metadata/Beacon-v2-Models_CINECA_UK1.xlsx", sheet = "biosamples")
