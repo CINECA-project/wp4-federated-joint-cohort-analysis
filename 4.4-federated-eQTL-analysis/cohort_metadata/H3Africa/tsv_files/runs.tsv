@@ -1,0 +1,581 @@
+biosampleId	id	individualId	libraryLayout	librarySelection	librarySource.id	librarySource.label	libraryStrategy	platform	platformModel.id	platformModel.label	runDate
+IPC167	RUN1	IPC167	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC186	RUN2	IPC186	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC177	RUN3	IPC177	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC188	RUN4	IPC188	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC169	RUN5	IPC169	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC189	RUN6	IPC189	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC171	RUN7	IPC171	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC190	RUN8	IPC190	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC173	RUN9	IPC173	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC191	RUN10	IPC191	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC175	RUN11	IPC175	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC117	RUN12	IPC117	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC097	RUN13	IPC097	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC113	RUN14	IPC113	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC099	RUN15	IPC099	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC100	RUN16	IPC100	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC115	RUN17	IPC115	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC110	RUN18	IPC110	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC116	RUN19	IPC116	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC214	RUN20	IPC214	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC221	RUN21	IPC221	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC215	RUN22	IPC215	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC223	RUN23	IPC223	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC216	RUN24	IPC216	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC224	RUN25	IPC224	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC217	RUN26	IPC217	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC225	RUN27	IPC225	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC218	RUN28	IPC218	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC226	RUN29	IPC226	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC220	RUN30	IPC220	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC227	RUN31	IPC227	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC193	RUN32	IPC193	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC119	RUN33	IPC119	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC194	RUN34	IPC194	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC120	RUN35	IPC120	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC195	RUN36	IPC195	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC121	RUN37	IPC121	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC196	RUN38	IPC196	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC124	RUN39	IPC124	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC197	RUN40	IPC197	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC199	RUN41	IPC199	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC126	RUN42	IPC126	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC127	RUN43	IPC127	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC182	RUN44	IPC182	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC128	RUN45	IPC128	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC136	RUN46	IPC136	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC129	RUN47	IPC129	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC183	RUN48	IPC183	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC130	RUN49	IPC130	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC184	RUN50	IPC184	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC131	RUN51	IPC131	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC132	RUN52	IPC132	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC134	RUN53	IPC134	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC003	RUN54	IPC003	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC014	RUN55	IPC014	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC005	RUN56	IPC005	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC015	RUN57	IPC015	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC008	RUN58	IPC008	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC017	RUN59	IPC017	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC007	RUN60	IPC007	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC022	RUN61	IPC022	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC135	RUN62	IPC135	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC142	RUN63	IPC142	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC137	RUN64	IPC137	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC143	RUN65	IPC143	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC180	RUN66	IPC180	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC144	RUN67	IPC144	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC139	RUN68	IPC139	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC145	RUN69	IPC145	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC140	RUN70	IPC140	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC146	RUN71	IPC146	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC141	RUN72	IPC141	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC147	RUN73	IPC147	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC207	RUN74	IPC207	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC209	RUN75	IPC209	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC210	RUN76	IPC210	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC212	RUN77	IPC212	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC213	RUN78	IPC213	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC101	RUN79	IPC101	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC148	RUN80	IPC148	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC154	RUN81	IPC154	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC149	RUN82	IPC149	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC155	RUN83	IPC155	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC181	RUN84	IPC181	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC156	RUN85	IPC156	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC151	RUN86	IPC151	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC157	RUN87	IPC157	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC152	RUN88	IPC152	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC178	RUN89	IPC178	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC153	RUN90	IPC153	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC024	RUN91	IPC024	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC031	RUN92	IPC031	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC023	RUN93	IPC023	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC030	RUN94	IPC030	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC026	RUN95	IPC026	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC032	RUN96	IPC032	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC027	RUN97	IPC027	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC039	RUN98	IPC039	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC034	RUN99	IPC034	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC038	RUN100	IPC038	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC033	RUN101	IPC033	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC040	RUN102	IPC040	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC160	RUN103	IPC160	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC166	RUN104	IPC166	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC161	RUN105	IPC161	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC168	RUN106	IPC168	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC163	RUN107	IPC163	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC172	RUN108	IPC172	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC165	RUN109	IPC165	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC176	RUN110	IPC176	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC067	RUN111	IPC067	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC010	RUN112	IPC010	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC035	RUN113	IPC035	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC068	RUN114	IPC068	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC042	RUN115	IPC042	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC025	RUN116	IPC025	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC052	RUN117	IPC052	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC019	RUN118	IPC019	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC002	RUN119	IPC002	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC021	RUN120	IPC021	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC011	RUN121	IPC011	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC029	RUN122	IPC029	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC037	RUN123	IPC037	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC058	RUN124	IPC058	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC046	RUN125	IPC046	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC069	RUN126	IPC069	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC102	RUN127	IPC102	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC108	RUN128	IPC108	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC185	RUN129	IPC185	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC107	RUN130	IPC107	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC104	RUN131	IPC104	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC106	RUN132	IPC106	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC105	RUN133	IPC105	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC229	RUN134	IPC229	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC200	RUN135	IPC200	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC228	RUN136	IPC228	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC231	RUN137	IPC231	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC203	RUN138	IPC203	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC230	RUN139	IPC230	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC204	RUN140	IPC204	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC232	RUN141	IPC232	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC205	RUN142	IPC205	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC233	RUN143	IPC233	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC206	RUN144	IPC206	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC078	RUN145	IPC078	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC044	RUN146	IPC044	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC050	RUN147	IPC050	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC051	RUN148	IPC051	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC047	RUN149	IPC047	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC048	RUN150	IPC048	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC056	RUN151	IPC056	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC049	RUN152	IPC049	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC061	RUN153	IPC061	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC073	RUN154	IPC073	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC063	RUN155	IPC063	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC074	RUN156	IPC074	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC065	RUN157	IPC065	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC071	RUN158	IPC071	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC066	RUN159	IPC066	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC075	RUN160	IPC075	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC076	RUN161	IPC076	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC080	RUN162	IPC080	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC082	RUN163	IPC082	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC088	RUN164	IPC088	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC095	RUN165	IPC095	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC093	RUN166	IPC093	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC086	RUN167	IPC086	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC092	RUN168	IPC092	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC085	RUN169	IPC085	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC091	RUN170	IPC091	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC084	RUN171	IPC084	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC090	RUN172	IPC090	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC083	RUN173	IPC083	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC275	RUN174	IPC275	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC278	RUN175	IPC278	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC292	RUN176	IPC292	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC297	RUN177	IPC297	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC250	RUN178	IPC250	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC279	RUN179	IPC279	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC293	RUN180	IPC293	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC298	RUN181	IPC298	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC246	RUN182	IPC246	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC280	RUN183	IPC280	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC282	RUN184	IPC282	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC300	RUN185	IPC300	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC304	RUN186	IPC304	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC283	RUN187	IPC283	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC281	RUN188	IPC281	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC305	RUN189	IPC305	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC301	RUN190	IPC301	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC241	RUN191	IPC241	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC314	RUN192	IPC314	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC315	RUN193	IPC315	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC332	RUN194	IPC332	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC334	RUN195	IPC334	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC350	RUN196	IPC350	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC352	RUN197	IPC352	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC317	RUN198	IPC317	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC319	RUN199	IPC319	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC337	RUN200	IPC337	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC419	RUN201	IPC419	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC325	RUN202	IPC325	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC274	RUN203	IPC274	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC272	RUN204	IPC272	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC254	RUN205	IPC254	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC253	RUN206	IPC253	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC423	RUN207	IPC423	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC424	RUN208	IPC424	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC284	RUN209	IPC284	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC380	RUN210	IPC380	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC306	RUN211	IPC306	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC238	RUN212	IPC238	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC285	RUN213	IPC285	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC289	RUN214	IPC289	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC307	RUN215	IPC307	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC309	RUN216	IPC309	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC239	RUN217	IPC239	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC418	RUN218	IPC418	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC410	RUN219	IPC410	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC417	RUN220	IPC417	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC409	RUN221	IPC409	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC415	RUN222	IPC415	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC408	RUN223	IPC408	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC414	RUN224	IPC414	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC407	RUN225	IPC407	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC413	RUN226	IPC413	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC404	RUN227	IPC404	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC403	RUN228	IPC403	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC347	RUN229	IPC347	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC348	RUN230	IPC348	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC268	RUN231	IPC268	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC321	RUN232	IPC321	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC335	RUN233	IPC335	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC322	RUN234	IPC322	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC338	RUN235	IPC338	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC339	RUN236	IPC339	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC401	RUN237	IPC401	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC391	RUN238	IPC391	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC399	RUN239	IPC399	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC390	RUN240	IPC390	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC398	RUN241	IPC398	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC389	RUN242	IPC389	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC395	RUN243	IPC395	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC387	RUN244	IPC387	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC393	RUN245	IPC393	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC386	RUN246	IPC386	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC392	RUN247	IPC392	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC385	RUN248	IPC385	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC383	RUN249	IPC383	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC373	RUN250	IPC373	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC379	RUN251	IPC379	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC372	RUN252	IPC372	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC378	RUN253	IPC378	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC371	RUN254	IPC371	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC377	RUN255	IPC377	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC370	RUN256	IPC370	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC376	RUN257	IPC376	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC369	RUN258	IPC369	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC375	RUN259	IPC375	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC381	RUN260	IPC381	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC266	RUN261	IPC266	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC263	RUN262	IPC263	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC344	RUN263	IPC344	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC327	RUN264	IPC327	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC326	RUN265	IPC326	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC343	RUN266	IPC343	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC324	RUN267	IPC324	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC342	RUN268	IPC342	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC323	RUN269	IPC323	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC341	RUN270	IPC341	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC360	RUN271	IPC360	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC361	RUN272	IPC361	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC358	RUN273	IPC358	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC366	RUN274	IPC366	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC426	RUN275	IPC426	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC427	RUN276	IPC427	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC262	RUN277	IPC262	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC261	RUN278	IPC261	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC429	RUN279	IPC429	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC430	RUN280	IPC430	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC434	RUN281	IPC434	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC312	RUN282	IPC312	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC313	RUN283	IPC313	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC367	RUN284	IPC367	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC260	RUN285	IPC260	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC259	RUN286	IPC259	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC234	RUN287	IPC234	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC235	RUN288	IPC235	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC257	RUN289	IPC257	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC255	RUN290	IPC255	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Genotyping microarray	Illumina	OBI:0002048	HumanOmniExpress-12v1	2015-09-30
+IPC167	RUN291	IPC167	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC186	RUN292	IPC186	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC177	RUN293	IPC177	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC188	RUN294	IPC188	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC169	RUN295	IPC169	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC189	RUN296	IPC189	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC171	RUN297	IPC171	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC190	RUN298	IPC190	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC173	RUN299	IPC173	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC191	RUN300	IPC191	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC175	RUN301	IPC175	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC117	RUN302	IPC117	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC097	RUN303	IPC097	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC113	RUN304	IPC113	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC099	RUN305	IPC099	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC100	RUN306	IPC100	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC115	RUN307	IPC115	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC110	RUN308	IPC110	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC116	RUN309	IPC116	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC214	RUN310	IPC214	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC221	RUN311	IPC221	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC215	RUN312	IPC215	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC223	RUN313	IPC223	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC216	RUN314	IPC216	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC224	RUN315	IPC224	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC217	RUN316	IPC217	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC225	RUN317	IPC225	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC218	RUN318	IPC218	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC226	RUN319	IPC226	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC220	RUN320	IPC220	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC227	RUN321	IPC227	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC193	RUN322	IPC193	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC119	RUN323	IPC119	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC194	RUN324	IPC194	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC120	RUN325	IPC120	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC195	RUN326	IPC195	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC121	RUN327	IPC121	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC196	RUN328	IPC196	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC124	RUN329	IPC124	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC197	RUN330	IPC197	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC199	RUN331	IPC199	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC126	RUN332	IPC126	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC127	RUN333	IPC127	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC182	RUN334	IPC182	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC128	RUN335	IPC128	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC136	RUN336	IPC136	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC129	RUN337	IPC129	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC183	RUN338	IPC183	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC130	RUN339	IPC130	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC184	RUN340	IPC184	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC131	RUN341	IPC131	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC132	RUN342	IPC132	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC134	RUN343	IPC134	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC003	RUN344	IPC003	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC014	RUN345	IPC014	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC005	RUN346	IPC005	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC015	RUN347	IPC015	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC008	RUN348	IPC008	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC017	RUN349	IPC017	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC007	RUN350	IPC007	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC022	RUN351	IPC022	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC135	RUN352	IPC135	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC142	RUN353	IPC142	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC137	RUN354	IPC137	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC143	RUN355	IPC143	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC180	RUN356	IPC180	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC144	RUN357	IPC144	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC139	RUN358	IPC139	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC145	RUN359	IPC145	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC140	RUN360	IPC140	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC146	RUN361	IPC146	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC141	RUN362	IPC141	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC147	RUN363	IPC147	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC207	RUN364	IPC207	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC209	RUN365	IPC209	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC210	RUN366	IPC210	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC212	RUN367	IPC212	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC213	RUN368	IPC213	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC101	RUN369	IPC101	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC148	RUN370	IPC148	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC154	RUN371	IPC154	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC149	RUN372	IPC149	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC155	RUN373	IPC155	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC181	RUN374	IPC181	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC156	RUN375	IPC156	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC151	RUN376	IPC151	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC157	RUN377	IPC157	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC152	RUN378	IPC152	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC178	RUN379	IPC178	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC153	RUN380	IPC153	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC024	RUN381	IPC024	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC031	RUN382	IPC031	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC023	RUN383	IPC023	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC030	RUN384	IPC030	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC026	RUN385	IPC026	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC032	RUN386	IPC032	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC027	RUN387	IPC027	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC039	RUN388	IPC039	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC034	RUN389	IPC034	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC038	RUN390	IPC038	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC033	RUN391	IPC033	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC040	RUN392	IPC040	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC160	RUN393	IPC160	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC166	RUN394	IPC166	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC161	RUN395	IPC161	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC168	RUN396	IPC168	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC163	RUN397	IPC163	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC172	RUN398	IPC172	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC165	RUN399	IPC165	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC176	RUN400	IPC176	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC067	RUN401	IPC067	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC010	RUN402	IPC010	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC035	RUN403	IPC035	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC068	RUN404	IPC068	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC042	RUN405	IPC042	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC025	RUN406	IPC025	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC052	RUN407	IPC052	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC019	RUN408	IPC019	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC002	RUN409	IPC002	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC021	RUN410	IPC021	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC011	RUN411	IPC011	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC029	RUN412	IPC029	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC037	RUN413	IPC037	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC058	RUN414	IPC058	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC046	RUN415	IPC046	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC069	RUN416	IPC069	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC102	RUN417	IPC102	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC108	RUN418	IPC108	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC185	RUN419	IPC185	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC107	RUN420	IPC107	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC104	RUN421	IPC104	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC106	RUN422	IPC106	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC105	RUN423	IPC105	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC229	RUN424	IPC229	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC200	RUN425	IPC200	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC228	RUN426	IPC228	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC231	RUN427	IPC231	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC203	RUN428	IPC203	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC230	RUN429	IPC230	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC204	RUN430	IPC204	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC232	RUN431	IPC232	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC205	RUN432	IPC205	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC233	RUN433	IPC233	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC206	RUN434	IPC206	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC078	RUN435	IPC078	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC044	RUN436	IPC044	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC050	RUN437	IPC050	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC051	RUN438	IPC051	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC047	RUN439	IPC047	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC048	RUN440	IPC048	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC056	RUN441	IPC056	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC049	RUN442	IPC049	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC061	RUN443	IPC061	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC073	RUN444	IPC073	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC063	RUN445	IPC063	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC074	RUN446	IPC074	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC065	RUN447	IPC065	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC071	RUN448	IPC071	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC066	RUN449	IPC066	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC075	RUN450	IPC075	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC076	RUN451	IPC076	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC080	RUN452	IPC080	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC082	RUN453	IPC082	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC088	RUN454	IPC088	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC095	RUN455	IPC095	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC093	RUN456	IPC093	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC086	RUN457	IPC086	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC092	RUN458	IPC092	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC085	RUN459	IPC085	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC091	RUN460	IPC091	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC084	RUN461	IPC084	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC090	RUN462	IPC090	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC083	RUN463	IPC083	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC275	RUN464	IPC275	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC278	RUN465	IPC278	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC292	RUN466	IPC292	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC297	RUN467	IPC297	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC250	RUN468	IPC250	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC279	RUN469	IPC279	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC293	RUN470	IPC293	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC298	RUN471	IPC298	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC246	RUN472	IPC246	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC280	RUN473	IPC280	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC282	RUN474	IPC282	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC300	RUN475	IPC300	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC304	RUN476	IPC304	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC283	RUN477	IPC283	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC281	RUN478	IPC281	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC305	RUN479	IPC305	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC301	RUN480	IPC301	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC241	RUN481	IPC241	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC314	RUN482	IPC314	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC315	RUN483	IPC315	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC332	RUN484	IPC332	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC334	RUN485	IPC334	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC350	RUN486	IPC350	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC352	RUN487	IPC352	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC317	RUN488	IPC317	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC319	RUN489	IPC319	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC337	RUN490	IPC337	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC419	RUN491	IPC419	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC325	RUN492	IPC325	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC274	RUN493	IPC274	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC272	RUN494	IPC272	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC254	RUN495	IPC254	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC253	RUN496	IPC253	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC423	RUN497	IPC423	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC424	RUN498	IPC424	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC284	RUN499	IPC284	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC380	RUN500	IPC380	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC306	RUN501	IPC306	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC238	RUN502	IPC238	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC285	RUN503	IPC285	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC289	RUN504	IPC289	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC307	RUN505	IPC307	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC309	RUN506	IPC309	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC239	RUN507	IPC239	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC418	RUN508	IPC418	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC410	RUN509	IPC410	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC417	RUN510	IPC417	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC409	RUN511	IPC409	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC415	RUN512	IPC415	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC408	RUN513	IPC408	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC414	RUN514	IPC414	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC407	RUN515	IPC407	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC413	RUN516	IPC413	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC404	RUN517	IPC404	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC403	RUN518	IPC403	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC347	RUN519	IPC347	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC348	RUN520	IPC348	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC268	RUN521	IPC268	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC321	RUN522	IPC321	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC335	RUN523	IPC335	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC322	RUN524	IPC322	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC338	RUN525	IPC338	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC339	RUN526	IPC339	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC401	RUN527	IPC401	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC391	RUN528	IPC391	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC399	RUN529	IPC399	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC390	RUN530	IPC390	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC398	RUN531	IPC398	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC389	RUN532	IPC389	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC395	RUN533	IPC395	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC387	RUN534	IPC387	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC393	RUN535	IPC393	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC386	RUN536	IPC386	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC392	RUN537	IPC392	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC385	RUN538	IPC385	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC383	RUN539	IPC383	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC373	RUN540	IPC373	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC379	RUN541	IPC379	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC372	RUN542	IPC372	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC378	RUN543	IPC378	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC371	RUN544	IPC371	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC377	RUN545	IPC377	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC370	RUN546	IPC370	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC376	RUN547	IPC376	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC369	RUN548	IPC369	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC375	RUN549	IPC375	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC381	RUN550	IPC381	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC266	RUN551	IPC266	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC263	RUN552	IPC263	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC344	RUN553	IPC344	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC327	RUN554	IPC327	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC326	RUN555	IPC326	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC343	RUN556	IPC343	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC324	RUN557	IPC324	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC342	RUN558	IPC342	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC323	RUN559	IPC323	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC341	RUN560	IPC341	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC360	RUN561	IPC360	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC361	RUN562	IPC361	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC358	RUN563	IPC358	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC366	RUN564	IPC366	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC426	RUN565	IPC426	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC427	RUN566	IPC427	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC262	RUN567	IPC262	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC261	RUN568	IPC261	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC429	RUN569	IPC429	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC430	RUN570	IPC430	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC434	RUN571	IPC434	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC312	RUN572	IPC312	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC313	RUN573	IPC313	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC367	RUN574	IPC367	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC260	RUN575	IPC260	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC259	RUN576	IPC259	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC234	RUN577	IPC234	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC235	RUN578	IPC235	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC257	RUN579	IPC257	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
+IPC255	RUN580	IPC255	PAIRED	RANDOM	GENEPIO:0001966	genomic Source	Gene expression microarray	Illumina	OBI:0002048	HumanHT-12_V4	2015-09-30
