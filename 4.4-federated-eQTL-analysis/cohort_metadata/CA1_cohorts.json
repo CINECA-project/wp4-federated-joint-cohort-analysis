@@ -31,6 +31,18 @@
                "availability" : true,
                "availabilityCount" : 1079
             },
+            "eventHeight" : {
+               "availability" : true,
+               "availabilityCount" : 1079
+            },
+            "eventWeight" : {
+               "availability" : true,
+               "availabilityCount" : 1079
+            },
+            "eventBMI" : {
+               "availability" : true,
+               "availabilityCount" : 1079
+            },
             "eventGeneExpression" : {
                "availability" : true,
                "availabilityCount" : 982,
@@ -42,6 +54,7 @@
             }
          }
       ],
+      "externalUrl" : "https://doi.org/10.5281/zenodo.7619796",
       "id" : "CINECA_synthetic_cohort_CA1",
       "inclusionCriteria" : {
          "ageRange" : {
